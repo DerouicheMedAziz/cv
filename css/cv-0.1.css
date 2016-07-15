@@ -1,3 +1,23 @@
+/***************************** 
+*          General           *
+*****************************/
+.title-section{
+    color: #e74c3c;
+}
+.text-education {
+    display: inline-block;
+    color: white;
+}
+.text-education-xs{
+    display: inline-block;
+    color: white;
+    opacity: 0.0;
+}
+section{
+    margin-bottom: 10px;
+    background-color: white;
+}
+
 body{
     background-color: #ecf0f1;
     padding-top: 60px;
@@ -6,10 +26,6 @@ body{
 header{
     background: #3498db;
 }
-h3{
-    color: #e74c3c;
-}
-
 .head-extension{
     /*background-color: blueviolet;*/
     
@@ -26,8 +42,8 @@ h3{
 .secondary{
     /*border: 1px solid black;*/
 }
-.img-sm-md-lg{
-    position:absolute;
+.img{
+    position: absolute;
     margin-top: -40px;
     margin-left: -75px;
     width: 175px;
@@ -52,7 +68,7 @@ header div:last-child h1{
 
 
 .img-xs{
-    position:absolute;
+    position: absolute;
     left: calc(50% - 50px);
     margin-top: 15px;
     
@@ -81,35 +97,48 @@ h4.head-title-xs{
     float: none;
     display: table-cell;
 }
-/* EDUCATION */
-#time-line{
-            position: absolute; 
-            top: 0;
-            right: 0;
-            height: 0%;
-                    width: 5px;
-                    background-color: #f1c40f;
-        }
-        .number-circle{
-                    position: absolute;
-                    margin-top: 20px;
-                    left: -28px;
-                    border-radius: 50%;
 
-                    width: 50px;
-                    height: 50px;
 
-                    padding-top: 6px;
 
-                    background-color: #f1c40f;
-                    color: #fff;
+/***************************** 
+*         EDUCATION          *
+*****************************/
+
+/* Setting */
+section:nth-child(2) .table{
+    padding-left: 10px;
+}
+section:nth-child(2) div:nth-child(2) div:nth-child(1){
+    margin-top: 25px;
+}
+.time-line{
+    position: absolute; 
+    top: 0;
+    right: 0;
+    height: 0%;
+    width: 5px;
+    background-color: #f1c40f;
+}
+.number-circle{
+    position: absolute;
+    margin-top: 20px;
+    left: -28px;
+    border-radius: 50%;
+    
+    width: 50px;
+    height: 50px;
+
+    padding-top: 6px;
+
+    background-color: #f1c40f;
+    color: #fff;
                     
-                    text-align: center;
+    text-align: center;
             
-            display: none;
-                }
-#row-2004-xs{
-    margin-top: 25px; 
+    display: none;
+}
+.text-block{
+    margin-bottom: 25px;
     padding-left: 30px;
     padding-right: 10px;
     
@@ -117,27 +146,7 @@ h4.head-title-xs{
     background-size: 200% 100%;
     background-position: right bottom;
 }
-#row-2006-xs{
-    
-    margin-top: 25px;
-    margin-bottom: 25px; 
-    padding-left: 30px; 
-    padding-right: 10px;
-    
-    background: linear-gradient(to right, #e67e22 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-}
-        #time-line-xs{
-            position:absolute; 
-            top: 0;
-            right: 0;
-            height: 0%;
-            width: 5px;
-            background-color: #f1c40f;
-        }
-
-        .number-circle-xs{
+.number-circle-xs{
             display: none;
             position: absolute;
             left: -25px;
@@ -148,21 +157,18 @@ h4.head-title-xs{
             background-color: #f1c40f;
             color: #fff;
             text-align: center; 
-        }
-.educ-texte-xs{
-    width: 100%;
-    opacity: 0.0;
 }
 .talkbubble {
-                  width: 100%;
-                  height: 100%;
-                  border: 2px solid #e67e22;
-                  -moz-border-radius:    5px;
-                  -webkit-border-radius: 5px;
-                  border-radius:         5px;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e67e22;
+    border-radius: 5px;
     background-color: #e67e22;
-              }
-              .talkbubble:before {
+    opacity: 0.0;
+}
+.talkbubble:before {
    content:"";
    position: absolute;
    right: 100%;
@@ -173,19 +179,35 @@ h4.head-title-xs{
    border-right: 14px solid #e67e22;
    border-bottom: 14px solid transparent;
 }
-/* CONTACTE */
+
+
+
+/***************************** 
+*        EXPERIENCES         *
+*****************************/
+.experience-title{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+
+/***************************** 
+*          CONTACT          *
+*****************************/
 .contact-row{
     width: 100%;
     height: 40px;
     float: left;
 }
-.icon{
+.contact-icon{
     display: inline-block;
     width: 20%;
     height: 100%;
     padding: 5px;
+    opacity: 0.3;
 }
-.title{
+.contact-title{
     display: inline-block;
     width: 80%;
     height: 100%;
@@ -196,6 +218,15 @@ h4.head-title-xs{
 }
 
 /* LAUNGAGES */
+
+/* Probelem */
+.secondary section:nth-child(3) div:nth-child(1) div:nth-child(2) .circles-block{
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+
 .laungage-row{
     width: 100%;
     height: 40px;
@@ -246,6 +277,13 @@ h4.head-title-xs{
 /* SKILLS */
 .progress{
     margin-bottom: 15px;
+    height: auto;
+}
+.progress-bar{
+    width: 0%; 
+    text-align: left; 
+    padding-left: 2%; 
+    background-color: #3498db;
 }
 .beginner-proficient{
     display: inline-block;
@@ -276,8 +314,10 @@ h4.head-title-xs{
     border-right: 2px solid black;
     opacity: 0.3;
 }
-.level-titel{
+.skills-level{
     display: inline-block;
+    margin-bottom: 10px;
     margin-left: -4px;
     opacity: 0.3;
+    background-color: aqua;
 }

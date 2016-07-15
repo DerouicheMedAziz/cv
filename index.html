@@ -46,14 +46,14 @@
             <header class="row">
                 <div class="hidden-xs col-sm-2"></div>
                 <div class="hidden-xs col-sm-10">
-                    <img class="img-sm-md-lg" src="images/profile-aziz-op.jpg" align="right">
-                    <h1 id="head-text-one" class="hidden-xs head-title">HELLO,</h1>
-                    <h4 id="head-text-two" class="hidden-xs head-title">MY NAME IS AZIZ AND THIS IS MY RESUME/CV</h4>
+                    <img class="img" src="images/profile-aziz-op.jpg" align="right">
+                    <h1 class="hidden-xs head-title">HELLO,</h1>
+                    <h4 class="hidden-xs head-title">MY NAME IS AZIZ AND THIS IS MY RESUME/CV</h4>
                 </div>
-                <div class="col-xs-12 hidden-sm">
-                    <img id="img-profile-sm" class="visible-xs img-xs" src="images/profile-aziz-op.jpg">
-                    <h1 id="head-text-one-sm" class="visible-xs text-center head-title">HELLO,</h1>
-                    <h4 id="head-text-two-sm" class="visible-xs text-center head-title">MY NAME IS AZIZ AND THIS IS MY RESUME/CV</h4>
+                <div class="hidden-sm col-xs-12">
+                    <img class="visible-xs img-xs" src="images/profile-aziz-op.jpg">
+                    <h1 class="visible-xs text-center head-title">HELLO,</h1>
+                    <h4 class="visible-xs text-center head-title">MY NAME IS AZIZ AND THIS IS MY RESUME/CV</h4>
                 </div>
             </header>
             <!--------------------------+
@@ -62,238 +62,225 @@
             <div class="row">
                 <div class="col-sm-7 col-md-7 principal">
                     <!-- ABOUT ME -->
-                    <div id="about-me" class="row" style="margin-bottom: 10px; background-color: white;">
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <h3 class="hidden-xs" style="color: #e74c3c;"><strong>// ABOUT ME</strong></h3>
-                            <h3 class="visible-xs text-center" style="color: #e74c3c;"><strong>// ABOUT ME</strong></h3>
-                            <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, non, dolorem, cumque distinctio magni quam expedita velit laborum sunt amet facere tempora ut fuga aliquam ad asperiores voluptatem dolorum! Quasi.</p>
-                        </div>
-                    </div>
+                    <section class="row col-md-12">
+                        <h3 class="hidden-xs title-section"><strong>// ABOUT ME</strong></h3>
+                        <h3 class="visible-xs text-center title-section"><strong>// ABOUT ME</strong></h3>
+                        <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, non, dolorem, cumque distinctio magni quam expedita velit laborum sunt amet facere tempora ut fuga aliquam ad asperiores voluptatem dolorum! Quasi.</p>
+                    </section>
                     <!-- EDUCATION -->
-                    <div id="education" class="row" style="margin-bottom: 10px; background-color: white;">
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <h3 class="hidden-xs"><strong>// EDUCATION</strong></h3>
-                            <h3 class="visible-xs text-center"><strong>// EDUCATION</strong></h3>
-                            <div class="row table hidden-xs" style="padding-left: 10px;">
-                                <div class="col-sm-1 col-md-1 table-cell">
-                                    <div id="time-line"></div>
-                                </div>
-                                <div class="col-sm-10 col-md-10 table-cell">
-                                    <div class="row">
-                                        <div id="number-circle-2004" class="number-circle"><h4>2004</h4></div>
-                                        <div id="talkbubble-2004" class="col-md-12 talkbubble" style="margin-left: 100px; opacity: 0.0;">
-                                            <h3 style="color: white;">I was born in Katowice</h3>
-                                            <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem, totam, dolores iste dolore est aut modi.</p>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="row" style="margin-top: 15px;">
-                                        <div id="number-circle-2006" class="number-circle" style="display: none;"><h4>2006</h4></div>
-                                        <div id="talkbubble-2006" class="col-md-12 talkbubble" style="margin-left: 100px; opacity: 0.0;">  
-                                            <h3 style="color: white;">Secondary school specializing in artistic</h3>
-                                            <p style="color: white;">Eos, explicabo, nam, tenetur et ab eius deserunt aspernatur ipsum ducimus quibusdam quis voluptatibus.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-1 col-md-1 table-cell"></div>
+                    <section class="row col-md-12">
+                        <h3 class="hidden-xs title-section"><strong>// EDUCATION</strong></h3>
+                        <h3 class="visible-xs title-section text-center"><strong>// EDUCATION</strong></h3>
+                        <div class="hidden-xs row table">
+                            <div class="col-sm-1 table-cell">
+                                <div class="time-line"></div>
                             </div>
-                            
-                            
-                            <div class="row table visible-xs" style="padding-left: 10px;">
-                                <div class="col-xs-1 table-cell">
-                                    <div id="time-line-xs"></div>
+                            <div class="col-sm-10 table-cell">
+                                <div class="row">
+                                    <div class="number-circle"><h4>2004</h4></div>
+                                    <div class="col-md-12 talkbubble">
+                                        <span class="text-education">
+                                            <h3>I was born in Katowice</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem, totam, dolores iste dolore est aut modi.</p>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="col-xs-11 table-cell">
-                                    <div id="row-2004-xs" class="row" style="">
-                                        <div id="number-circle-xs-2004" class="number-circle-xs"><h5>2004</h5></div>
-                                        <div id="educ-bloc-xs-2004" class="educ-texte-xs">
-                                            <h4 style="color: white;">I was born in Katowice</h4>
-                                            <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem, totam, dolores iste dolore est aut modi.</p>
-                                        </div>
+                                <div class="row">
+                                    <div class="number-circle"><h4>2006</h4></div>
+                                    <div class="col-md-12 talkbubble">
+                                        <span class="text-education">
+                                            <h3>Secondary school specializing in artistic</h3>
+                                            <p>Eos, explicabo, nam, tenetur et ab eius deserunt aspernatur ipsum ducimus quibusdam quis voluptatibus.</p>
+                                        </span>
                                     </div>
-                                    <div id="row-2006-xs" class="row" style="">
-                                        <div id="number-circle-xs-2006" class="number-circle-xs"><h5>2006</h5></div>
-                                        <div id="educ-bloc-xs-2006" class="educ-texte-xs">
-                                            <h4 style="color: white;">Secondary school specializing in artistic</h4>
-                                            <p style="color: white;">Eos, explicabo, nam, tenetur et ab eius deserunt aspernatur ipsum ducimus quibusdam quis voluptatibus.</p>
-                                        </div>
-                                    </div>
-                                </div>    
+                                </div>
                             </div>
-                            
-                            
+                            <div class="col-sm-1 table-cell"></div>
                         </div>
-                    </div>
+                        <div class="visible-xs row table">
+                            <div class="col-xs-1 table-cell">
+                                <div class="time-line"></div>
+                            </div>
+                            <div class="col-xs-11 table-cell">
+                                <div class="row text-block">
+                                    <div class="number-circle-xs"><h5>2004</h5></div>
+                                    <span class="text-education-xs">
+                                        <h4>I was born in Katowice</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem, totam, dolores iste dolore est aut modi.</p>
+                                    </span>
+                                </div>
+                                <div class="row text-block">
+                                    <div class="number-circle-xs"><h5>2006</h5></div>
+                                    <span class="text-education-xs">
+                                        <h4>Secondary school specializing in artistic</h4>
+                                        <p>Eos, explicabo, nam, tenetur et ab eius deserunt aspernatur ipsum ducimus quibusdam quis voluptatibus.</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>    
+                    </section>
                     <!-- EXPERIENCES -->
-                    <div id="experiences" class="row" style="background-color: white;">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h3 class="hidden-xs"><strong>// EXPERIENCES</strong></h3>
-                            <h3 class="visible-xs text-center"><strong>// EXPERIENCES</strong></h3>
-                            <div class="row hidden-xs">
-                                <div class="col-sm-2">
-                                    <h4 style="margin-top: 25px;">Twitter</br><small>2002-2003</small></h4>
-                                </div>
-                                <div class="col-sm-10">
-                                    <h3 style="color: black;">Front-end developer / php programmer</h3>
-                                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia.</p>
-                                </div>
-                            </div>
-                            <div class="row visible-xs">
-                                <div class="col-xs-12">
-                                    <h3 style="color: black;">Twitter: <small>2002-2003</small></h3>
-                                    <p align="justify"><strong>Front-end developer / php programmer: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia.</p>
-                                </div>
-                            </div>
-                            <div class="row hidden-xs">
-                                <div class="col-sm-2">
-                                    <h4 style="margin-top: 25px; color: black;">Google</br><small>2004-2007</small></h4>
-                                </div>
-                                <div class="col-sm-10">
-                                    <h3 style="color: black;">Web Developer</h3>
-                                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nihil sit nemo voluptatem praesentium. Quia, qui facere consectetur libero asperiores fugiat consequuntur deserunt culpa repudiandae sed quidem voluptas explicabo soluta.</p>
-                                </div>
-                            </div>
-                            <div class="row visible-xs">
-                                <div class="col-lg-12">
-                                    <h3 style="color: black;">Google: <small>2004-2007</small></h3>
-                                    <p align="justify"><strong>Web Developer: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nihil sit nemo voluptatem praesentium. Quia, qui facere consectetur libero asperiores fugiat consequuntur deserunt culpa repudiandae sed quidem voluptas explicabo soluta.</p>
-                                </div>
-                            </div>
+                    <section class="row col-md-12">
+                        <h3 class="hidden-xs title-section"><strong>// EXPERIENCES</strong></h3>
+                        <h3 class="visible-xs title-section text-center"><strong>// EXPERIENCES</strong></h3>
+                        <div class="hidden-xs row">
+                            <span class="col-sm-2 experience-title">
+                                <h4>Twitter</br><small>2002-2003</small></h4>
+                            </span>
+                            <span class="col-sm-10">
+                                <h3>Front-end developer / php programmer</h3>
+                                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia.</p>
+                            </span>
                         </div>
-                    </div>
+                        <div class="visible-xs row">
+                            <span class="col-xs-12">
+                                <h3>Twitter: <small>2002-2003</small></h3>
+                                <p align="justify"><strong>Front-end developer / php programmer: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia.</p>
+                            </span>
+                        </div>
+                        <div class="hidden-xs row">
+                            <span class="col-sm-2 experience-title">
+                                <h4>Google</br><small>2004-2007</small></h4>
+                            </span>
+                            <span class="col-sm-10">
+                                <h3>Web Developer</h3>
+                                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nihil sit nemo voluptatem praesentium. Quia, qui facere consectetur libero asperiores fugiat consequuntur deserunt culpa repudiandae sed quidem voluptas explicabo soluta.</p>
+                            </span>
+                        </div>
+                        <div class="visible-xs row">
+                            <span class="col-xs-12">
+                                <h3>Google: <small>2004-2007</small></h3>
+                                <p align="justify"><strong>Web Developer: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nihil sit nemo voluptatem praesentium. Quia, qui facere consectetur libero asperiores fugiat consequuntur deserunt culpa repudiandae sed quidem voluptas explicabo soluta.</p>
+                            </span>
+                        </div>
+                    </section>
                 </div>
                 <div class="col-sm-5 col-md-5 secondary">
-                    <!-- CONTACTE -->
-                    <div id="contacte" class="row" style="margin-bottom: 10px; padding-bottom: 10px; background-color: white;">
-                        <div class="col-sm-12 col-md-12">
-                            <h3 class="hidden-xs"><strong>// CONTACTE</strong></h3>
-                            <h3 class="visible-xs text-center"><strong>// CONTACTE</strong></h3>
-                            <div class="contact-row">
-                                <div class="icon text-center">
-                                    <span class="fa fa-mobile fa-2x" style="opacity: 0.3;"></span>
-                                </div>
-                                <div class="title only pull-right">
-                                    <h5>+216 52 859 386</h5>
-                                </div>
+                    <!-- CONTACT -->
+                    <section class="row col-md-12">
+                        <h3 class="hidden-xs title-section"><strong>// CONTACT</strong></h3>
+                        <h3 class="visible-xs title-section text-center"><strong>// CONTACT</strong></h3>
+                        <div class="contact-row">
+                            <div class="contact-icon text-center">
+                                <span class="fa fa-mobile fa-2x"></span>
                             </div>
-                            <div class="contact-row">
-                                <div class="icon text-center">
-                                    <span class="fa fa-envelope fa-2x" style="opacity: 0.3;"></span>
-                                </div>
-                                <div class="title only pull-right">
-                                    <h5>derouiche.aziz@gmail.com</h5>
-                                </div>
+                            <div class="contact-title only pull-right">
+                                <h5>+216 52 859 386</h5>
                             </div>
-                            <div class="contact-row">
-                                <div class="icon text-center">
-                                    <span class="fa fa-facebook-square fa-2x" style="opacity: 0.3;"></span>
-                                </div>
-                                <div class="title only pull-right">
-                                    <h5>facebook.com/derouiche.aziz</h5>
-                                </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon text-center">
+                                <span class="fa fa-envelope fa-2x"></span>
                             </div>
-                            <div class="contact-row">
-                                <div class="icon text-center">
-                                    <span class="fa fa-skype fa-2x" style="opacity: 0.3;"></span>
-                                </div>
-                                <div class="title only pull-right">
-                                    <h5>derouiche.aziz</h5>
-                                </div>
+                            <div class="contact-title only pull-right">
+                                <h5>derouiche.aziz@gmail.com</h5>
                             </div>
-                        </div> 
-                    </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon text-center">
+                                <span class="fa fa-facebook-square fa-2x"></span>
+                            </div>
+                            <div class="contact-title only pull-right">
+                                <h5>facebook.com/derouiche.aziz</h5>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon text-center">
+                                <span class="fa fa-skype fa-2x"></span>
+                            </div>
+                            <div class="contact-title only pull-right">
+                                <h5>derouiche.aziz</h5>
+                            </div>
+                        </div>
+                    </section>
                     <!-- SKILLS -->
-                    <div id="skills" class="row" style="margin-bottom: 10px; padding-bottom: 10px; background-color: white;">
-                        <div class="col-sm-12 col-md-12">
-                            <h3 class="hidden-xs"><strong>// SKILLS</strong></h3>
-                            <h3 class="visible-xs text-center"><strong>// SKILLS</strong></h3>
-                            <div class="progress" style="height: auto;">
-                                <div id="pHTML" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%; text-align: left; padding-left: 2%; background-color: #3498db;">
-                                    <h5>HTML</h5>
-                                </div>
+                    <section class="row col-md-12">
+                        <h3 class="hidden-xs title-section"><strong>// SKILLS</strong></h3>
+                        <h3 class="visible-xs title-section text-center"><strong>// SKILLS</strong></h3>
+                        <div class="progress">
+                            <div id="pHTML" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <h5>HTML</h5>
                             </div>
-                            <div class="progress" style="height: auto;">
-                                <div id="pCSS" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%; text-align: left; padding-left: 2%; background-color: #3498db;">
-                                    <h5>CSS</h5>
-                                </div>
-                            </div>
-                            <div class="progress" style="margin-bottom: 10px; height: auto;">
-                                <div id="pJS" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%; text-align: left; padding-left: 2%; background-color: #3498db;">
-                                    <h5>JavaScript</h5>
-                                </div>
-                            </div>
-                            <div class="beginner-proficient"></div>
-                            <div class="proficient-expert"></div>
-                            <div class="expert-master"></div>
-                            <div class="level-titel" style="width: 25%; margin-left: 0px;"><span style="font-size: 12px;"><strong>Beginner</strong></span></div>
-                            <div class="level-titel text-center" style="width: 30%;"><span style="font-size: 12px;"><strong>Proficient</strong></span></div>
-                            <div class="level-titel text-center" style="width: 30%;"><span style="font-size: 12px;"><strong>Expert</strong></span></div>
-                            <div class="level-titel text-right" style="width: 15%;"><span style="font-size: 12px;"><strong>Master</strong></span></div>
                         </div>
-                    </div>
+                        <div class="progress">
+                            <div id="pCSS" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <h5>CSS</h5>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div id="pJS" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                 <h5>JavaScript</h5>
+                             </div>
+                        </div>
+                        <div class="beginner-proficient"></div>
+                        <div class="proficient-expert"></div>
+                        <div class="expert-master"></div>
+                        <span class="skills-level" style="width: 25%; margin-left: 0px;">Beginner</span>
+                        <span class="skills-level text-center" style="width: 30%;">Proficient</span>
+                        <span class="skills-level text-center" style="width: 30%;">Expert</span>
+                        <span class="skills-level text-right" style="width: 15%;">Master</span>
+                    </section>
                     <!-- LAUNGAGES -->
-                    <div id="laungages" class="row" style="margin-bottom: 10px; padding-bottom: 10px; background-color: white;">
-                        <div class="col-sm-12 col-md-12">
-                            <h3 class="hidden-xs"><strong>// LAUNGAGES</strong></h3>
-                            <h3 class="visible-xs text-center"><strong>// LAUNGAGES</strong></h3>
-                            <div class="laungage-row">     
-                                <div class="laungage">
-                                    <h4>Englais</h4>
-                                </div>
-                                <div class="circles only pull-right">
-                                    <div class="circles-block">
-                                        <div id="lau-en-cer-one" class="cer-border"></div>
-                                        <div id="lau-en-cer-two" class="cer-border"></div>
-                                        <div id="lau-en-cer-three" class="cer-border"></div>
-                                        <div id="lau-en-cer-four" class="cer-border"></div>
-                                        <div id="lau-en-cer-five" class="cer-border"></div>
-                                    </div>
-                                </div> 
+                    <section class="row col-md-12">
+                        <h3 class="hidden-xs title-section"><strong>// LAUNGAGES</strong></h3>
+                        <h3 class="visible-xs title-section text-center"><strong>// LAUNGAGES</strong></h3>
+                        <div class="laungage-row">
+                            <div class="laungage">
+                                <h4>Englais</h4>
                             </div>
-                            <div class="laungage-row">    
-                                <div class="laungage">
-                                    <h4>Français</h4>
+                            <div class="circles only pull-right">
+                                <div class="circles-block">
+                                    <div id="lau-en-cer-one" class="cer-border"></div>
+                                    <div id="lau-en-cer-two" class="cer-border"></div>
+                                    <div id="lau-en-cer-three" class="cer-border"></div>
+                                    <div id="lau-en-cer-four" class="cer-border"></div>
+                                    <div id="lau-en-cer-five" class="cer-border"></div>
                                 </div>
-                                <div class="circles only pull-right">
-                                    <div class="circles-block">
-                                        <div id="lau-fr-cer-one" class="cer-border"></div>
-                                        <div id="lau-fr-cer-two" class="cer-border"></div>
-                                        <div id="lau-fr-cer-three" class="cer-border"></div>
-                                        <div id="lau-fr-cer-four" class="cer-border"></div>
-                                        <div id="lau-fr-cer-five" class="cer-border"></div>
-                                    </div>
-                                </div>   
+                            </div> 
+                        </div>
+                        <div class="laungage-row">    
+                            <div class="laungage">
+                                <h4>Français</h4>
                             </div>
-                            <div class="laungage-row">        
-                                <div class="laungage">
-                                    <h4>Deutsch</h4>
+                            <div class="circles only pull-right">
+                                <div class="circles-block">
+                                    <div id="lau-fr-cer-one" class="cer-border"></div>
+                                    <div id="lau-fr-cer-two" class="cer-border"></div>
+                                    <div id="lau-fr-cer-three" class="cer-border"></div>
+                                    <div id="lau-fr-cer-four" class="cer-border"></div>
+                                    <div id="lau-fr-cer-five" class="cer-border"></div>
                                 </div>
-                                <div class="circles only pull-right">
-                                    <div class="circles-block">
-                                        <div id="lau-de-cer-one" class="cer-border"></div>
-                                        <div id="lau-de-cer-two" class="cer-border"></div>
-                                        <div id="lau-de-cer-three" class="cer-border"></div>
-                                        <div id="lau-de-cer-four" class="cer-border"></div>
-                                        <div id="lau-de-cer-five" class="cer-border"></div>
-                                    </div>
-                                </div>
+                            </div>   
+                        </div>
+                        <div class="laungage-row">        
+                            <div class="laungage">
+                                <h4>Deutsch</h4>
                             </div>
-                            <div class="laungage-row">
-                                <div class="laungage">
-                                    <h4>Arabe</h4>
-                                </div>
-                                <div class="circles only pull-right">
-                                    <div class="circles-block">
-                                        <div id="lau-ar-cer-one" class="cer-border"></div>
-                                        <div id="lau-ar-cer-two" class="cer-border"></div>
-                                        <div id="lau-ar-cer-three" class="cer-border"></div>
-                                        <div id="lau-ar-cer-four" class="cer-border"></div>
-                                        <div id="lau-ar-cer-five" class="cer-border"></div>
-                                    </div>
+                            <div class="circles only pull-right">
+                                <div class="circles-block">
+                                    <div id="lau-de-cer-one" class="cer-border"></div>
+                                    <div id="lau-de-cer-two" class="cer-border"></div>
+                                    <div id="lau-de-cer-three" class="cer-border"></div>
+                                    <div id="lau-de-cer-four" class="cer-border"></div>
+                                    <div id="lau-de-cer-five" class="cer-border"></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="laungage-row">
+                            <div class="laungage">
+                                <h4>Arabe</h4>
+                            </div>
+                            <div class="circles only pull-right">
+                                <div class="circles-block">
+                                    <div id="lau-ar-cer-one" class="cer-border"></div>
+                                    <div id="lau-ar-cer-two" class="cer-border"></div>
+                                    <div id="lau-ar-cer-three" class="cer-border"></div>
+                                    <div id="lau-ar-cer-four" class="cer-border"></div>
+                                    <div id="lau-ar-cer-five" class="cer-border"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <!-- HOBBIES -->
                     <div id="hobbies" class="row" style="padding-bottom: 15px; background-color: white;">
                         <div class="col-md-12">
