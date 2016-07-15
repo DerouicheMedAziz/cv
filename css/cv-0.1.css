@@ -1,0 +1,283 @@
+body{
+    background-color: #ecf0f1;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+header{
+    background: #3498db;
+}
+h3{
+    color: #e74c3c;
+}
+
+.head-extension{
+    /*background-color: blueviolet;*/
+    
+}
+.head-contents{
+    /*background: deepskyblue;*/
+}
+.head-texte{
+    /*z-index: -1;*/
+}
+.principal{
+    /*border: 1px solid black;*/
+}
+.secondary{
+    /*border: 1px solid black;*/
+}
+.img-sm-md-lg{
+    position:absolute;
+    margin-top: -40px;
+    margin-left: -75px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    background: #ededed;
+    opacity: 0.0;
+}
+.head-title{
+    opacity: 0.0; 
+    color: white;
+}
+header div:nth-child(2) h1, header div:nth-child(2) h4{
+    padding-left: 300px;  
+}
+header div:last-child h1{
+    padding-top: 100px;  
+}
+
+
+
+.img-xs{
+    position:absolute;
+    left: calc(50% - 50px);
+    margin-top: 15px;
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    background-color: #ededed;
+    opacity: 0.0;
+}
+.head-title-xs{
+    padding-top: 100px; 
+    opacity: 0.0; 
+    color: white;
+}
+h4.head-title-xs{
+    padding-top: 0px; 
+} 
+
+
+.table{
+    display: table;
+}
+.table-cell{
+    float: none;
+    display: table-cell;
+}
+/* EDUCATION */
+#time-line{
+            position: absolute; 
+            top: 0;
+            right: 0;
+            height: 0%;
+                    width: 5px;
+                    background-color: #f1c40f;
+        }
+        .number-circle{
+                    position: absolute;
+                    margin-top: 20px;
+                    left: -28px;
+                    border-radius: 50%;
+
+                    width: 50px;
+                    height: 50px;
+
+                    padding-top: 6px;
+
+                    background-color: #f1c40f;
+                    color: #fff;
+                    
+                    text-align: center;
+            
+            display: none;
+                }
+#row-2004-xs{
+    margin-top: 25px; 
+    padding-left: 30px;
+    padding-right: 10px;
+    
+    background: linear-gradient(to right, #e67e22 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+#row-2006-xs{
+    
+    margin-top: 25px;
+    margin-bottom: 25px; 
+    padding-left: 30px; 
+    padding-right: 10px;
+    
+    background: linear-gradient(to right, #e67e22 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+        #time-line-xs{
+            position:absolute; 
+            top: 0;
+            right: 0;
+            height: 0%;
+            width: 5px;
+            background-color: #f1c40f;
+        }
+
+        .number-circle-xs{
+            display: none;
+            position: absolute;
+            left: -25px;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            padding-top: 6px;
+            background-color: #f1c40f;
+            color: #fff;
+            text-align: center; 
+        }
+.educ-texte-xs{
+    width: 100%;
+    opacity: 0.0;
+}
+.talkbubble {
+                  width: 100%;
+                  height: 100%;
+                  border: 2px solid #e67e22;
+                  -moz-border-radius:    5px;
+                  -webkit-border-radius: 5px;
+                  border-radius:         5px;
+    background-color: #e67e22;
+              }
+              .talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 28px;
+   width: 0;
+   height: 0;
+   border-top: 14px solid transparent;
+   border-right: 14px solid #e67e22;
+   border-bottom: 14px solid transparent;
+}
+/* CONTACTE */
+.contact-row{
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+.icon{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    padding: 5px;
+}
+.title{
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+}
+.title h5{
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+/* LAUNGAGES */
+.laungage-row{
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+.laungage{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+}
+.laungage h4{
+    line-height: 10px;
+    vertical-align: middle;
+}
+.circles{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+.circles-block{
+    display: inline-block;
+    position: absolute;
+    height: 40px;
+    padding: 8px;
+    right: 15px;
+}
+.cer-solid{
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #27ae60;
+    color: #fff;
+}          
+ .cer-border{
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #27ae60;
+    background-color: none;
+    color: #fff;
+}
+
+/* SKILLS */
+.progress{
+    margin-bottom: 15px;
+}
+.beginner-proficient{
+    display: inline-block;
+    width: 40%;
+    height: 10px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 1px solid black;
+    opacity: 0.3;
+}
+.proficient-expert{
+    display: inline-block;
+    width: 30%;
+    height: 10px;
+    margin-left: -4px;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    opacity: 0.3;
+}
+.expert-master{
+    display: inline-block;
+    width: 30%;
+    height: 10px;
+    margin-left: -4px;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 2px solid black;
+    opacity: 0.3;
+}
+.level-titel{
+    display: inline-block;
+    margin-left: -4px;
+    opacity: 0.3;
+}
