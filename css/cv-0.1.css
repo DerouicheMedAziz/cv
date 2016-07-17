@@ -321,3 +321,22 @@ section:nth-child(2) div:nth-child(2) div:nth-child(1){
     opacity: 0.3;
     background-color: aqua;
 }
+
+
+/***************************** 
+*           HOBBIES          *
+*****************************/
+.secondary section:nth-child(4){
+    padding-bottom: 15px;
+}
+.item-hobbie{
+    display: inline-block; 
+    margin-top: 10px; 
+    margin-bottom: 0px;
+}
+.item-hobbie .label{
+    background-color: #f39c12;
+}
+.item-hobbie .label .glyphicon{
+    font-size: 16px;
+}
