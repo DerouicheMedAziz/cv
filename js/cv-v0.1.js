@@ -59,19 +59,19 @@ var resetSkills = function(){
     $("#pJS").css("width", "0%");
 };
 var laungages = function(){
-    $("#lau-en-cer-one").animate({backgroundColor: '#27ae60'}, 500);
-    $("#lau-en-cer-two").delay(100).animate({backgroundColor: '#27ae60'}, 500);
+    $("table tr:nth-child(1) td:nth-child(2) .circle-level").animate({backgroundColor: '#27ae60'}, 500);
+    $("table tr:nth-child(1) td:nth-child(3) .circle-level").delay(100).animate({backgroundColor: '#27ae60'}, 500);
     
-    $("#lau-fr-cer-one").delay(200).animate({backgroundColor: '#27ae60'}, 500);
-    $("#lau-fr-cer-two").delay(300).animate({backgroundColor: '#27ae60'}, 500);
-    $("#lau-fr-cer-three").delay(400).animate({backgroundColor: '#27ae60'}, 500);
+    $("table tr:nth-child(2) td:nth-child(2) .circle-level").delay(200).animate({backgroundColor: '#27ae60'}, 500);
+    $("table tr:nth-child(2) td:nth-child(3) .circle-level").delay(300).animate({backgroundColor: '#27ae60'}, 500);
+    $("table tr:nth-child(2) td:nth-child(4) .circle-level").delay(400).animate({backgroundColor: '#27ae60'}, 500);
 
-    $("#lau-de-cer-one").delay(500).animate({backgroundColor: '#27ae60'}, 500);
+    $("table tr:nth-child(3) td:nth-child(2) .circle-level").delay(500).animate({backgroundColor: '#27ae60'}, 500);
     
-    $("#lau-ar-cer-one").delay(600).animate({backgroundColor: '#27ae60'}, 500);
-    $("#lau-ar-cer-two").delay(700).animate({backgroundColor: '#27ae60'}, 500);
-    $("#lau-ar-cer-three").delay(800).animate({backgroundColor: '#27ae60'}, 500);
-    $("#lau-ar-cer-four").delay(900).animate({backgroundColor: '#27ae60'}, 500);
+    $("table tr:nth-child(4) td:nth-child(2) .circle-level").delay(600).animate({backgroundColor: '#27ae60'}, 500);
+    $("table tr:nth-child(4) td:nth-child(3) .circle-level").delay(700).animate({backgroundColor: '#27ae60'}, 500);
+    $("table tr:nth-child(4) td:nth-child(4) .circle-level").delay(800).animate({backgroundColor: '#27ae60'}, 500);
+    $("table tr:nth-child(4) td:nth-child(5) .circle-level").delay(900).animate({backgroundColor: '#27ae60'}, 500);
 };
             
             $(document).ready(function(){
