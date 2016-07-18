@@ -108,8 +108,8 @@ h4.head-title-xs{
 section:nth-child(2) .table{
     padding-left: 10px;
 }
-section:nth-child(2) div:nth-child(2) div:nth-child(1){
-    margin-top: 25px;
+section:nth-child(2) div:nth-child(2).table-cell{
+    padding-top: 25px;
 }
 .time-line{
     position: absolute; 
@@ -147,16 +147,16 @@ section:nth-child(2) div:nth-child(2) div:nth-child(1){
     background-position: right bottom;
 }
 .number-circle-xs{
-            display: none;
-            position: absolute;
-            left: -25px;
-            border-radius: 50%;
-            width: 45px;
-            height: 45px;
-            padding-top: 6px;
-            background-color: #f1c40f;
-            color: #fff;
-            text-align: center; 
+    display: none;
+    position: absolute;
+    left: -25px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding-top: 6px;
+    background-color: #f1c40f;
+    color: #fff;
+    text-align: center; 
 }
 .talkbubble {
     margin-left: 100px;
