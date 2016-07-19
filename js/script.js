@@ -49,9 +49,9 @@ var educationXS = function(){
     $('.principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2) .text-education-xs').delay(1600).animate({opacity: '1.0'}, "slow");
 };
 var skills = function(){
-    $("#pHTML").animate({width: '70%'}, 500);
-    $("#pCSS").animate({width: '40%'}, 750);
-    $("#pJS").animate({width: '20%'}, 1000);
+    $(".progress:nth-of-type(1) .progress-bar").animate({width: '70%'}, 400);
+    $(".progress:nth-of-type(2) .progress-bar").animate({width: '40%'}, 800);
+    $(".progress:nth-of-type(3) .progress-bar").animate({width: '20%'}, 1200);
 };
 var laungages = function(){
     $("table tr:nth-child(1) td:nth-child(2) .circle-level").animate({backgroundColor: '#27ae60'}, 500);
