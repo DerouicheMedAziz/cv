@@ -319,7 +319,8 @@ table{
 }  
 .item-hobbie .label{  
     background-color: #f39c12;  
-}  
-.item-hobbie .label .glyphicon{  
-    font-size: 16px;  
+}
+.item-hobbie .label i{  
+    margin-left: -5px;
+    margin-right: 2px;
 }
