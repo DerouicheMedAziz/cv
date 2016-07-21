@@ -1,7 +1,12 @@
 /***************************** 
 *          General           *
 *****************************/
-.title-section{
+@media (max-width: 767px) {
+    .section-title{
+        text-align: center;
+    }
+}
+.section-title{
     color: #e74c3c;
 }
 .text-education {
