@@ -1,4 +1,6 @@
 var x, y;
+
+var d = 0;
             
 var educationLaunch = false;
 var laungagesLaunch = false;
@@ -15,6 +17,11 @@ var laungagesBottomPosition;
 var skillsHeight;
 var skillsTopPosition;
 var skillsBottomPosition;
+
+function skillItem(i, w){
+    d = d + 400;
+    $(".progress:nth-of-type(" + i + ") .progress-bar").animate({width: w}, d);
+}
 
 var header = function(){
     $(".img").delay(300).animate({marginLeft: '0px', opacity: '1.0'}, "slow");
@@ -49,9 +56,16 @@ var educationXS = function(){
     $('.principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2) .text-education-xs').delay(1600).animate({opacity: '1.0'}, "slow");
 };
 var skills = function(){
-    $(".progress:nth-of-type(1) .progress-bar").animate({width: '70%'}, 400);
-    $(".progress:nth-of-type(2) .progress-bar").animate({width: '40%'}, 800);
-    $(".progress:nth-of-type(3) .progress-bar").animate({width: '20%'}, 1200);
+    skillItem("1", "70%");
+    skillItem("2", "40%");
+    skillItem("3", "20%");
+    
+    /*------------------ * Add your skill item here * -----------------+
+    |                                                                  |
+    |   skillItem("INDEX", "LEVEL");                                   |
+    |                                                                  |
+    +-----------------------------------------------------------------*/
+    
 };
 var laungages = function(){
     $("table tr:nth-child(1) td:nth-child(2) .circle-level").animate({backgroundColor: '#27ae60'}, 500);
