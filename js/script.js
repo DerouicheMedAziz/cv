@@ -19,9 +19,9 @@ var skillsHeight;
 var skillsTopPosition;
 var skillsBottomPosition;
 
-function skillItem(i, w){
+function skillItem(i, l){
     skillDelay = skillDelay + 400;
-    $(".progress:nth-of-type(" + i + ") .progress-bar").animate({width: w}, d);
+    $(".progress:nth-of-type(" + i + ") .progress-bar").animate({width: l}, skillDelay);
 }
 function laungageItem(i, l){  
     for(c = 1; c <= l; c++ ){  
