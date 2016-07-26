@@ -1,6 +1,7 @@
 var x, y;
 
 var skillDelay = 0;
+var laungageDelay = 0;
             
 var educationLaunch = false;
 var laungagesLaunch = false;
@@ -21,6 +22,12 @@ var skillsBottomPosition;
 function skillItem(i, w){
     skillDelay = skillDelay + 400;
     $(".progress:nth-of-type(" + i + ") .progress-bar").animate({width: w}, d);
+}
+function laungageItem(i, l){  
+    for(c = 1; c <= l; c++ ){  
+        $("table tr:nth-child("+i+") td:nth-child("+ (c+1) +") .circle-level").delay(laungageDelay).animate({backgroundColor: '#27ae60'}, 500);  
+        laungageDelay = laungageDelay + 150;  
+    }  
 }
 
 var header = function(){
@@ -72,6 +79,12 @@ var laungages = function(){
     laungageItem(2, 3);
     laungageItem(3, 1);
     laungageItem(4, 4);
+    
+    /*---------------- * Add your laungage item here * ----------------+
+    |                                                                  |
+    |   laungageItem(INDEX, LEVEL);                                    |
+    |                                                                  |
+    +-----------------------------------------------------------------*/
 };
             
             $(document).ready(function(){
