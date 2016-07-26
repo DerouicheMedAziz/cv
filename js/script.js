@@ -1,6 +1,6 @@
 var x, y;
 
-var d = 0;
+var skillDelay = 0;
             
 var educationLaunch = false;
 var laungagesLaunch = false;
@@ -19,7 +19,7 @@ var skillsTopPosition;
 var skillsBottomPosition;
 
 function skillItem(i, w){
-    d = d + 400;
+    skillDelay = skillDelay + 400;
     $(".progress:nth-of-type(" + i + ") .progress-bar").animate({width: w}, d);
 }
 
@@ -68,19 +68,10 @@ var skills = function(){
     
 };
 var laungages = function(){
-    $("table tr:nth-child(1) td:nth-child(2) .circle-level").animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(1) td:nth-child(3) .circle-level").delay(100).animate({backgroundColor: '#27ae60'}, 500);
-    
-    $("table tr:nth-child(2) td:nth-child(2) .circle-level").delay(200).animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(2) td:nth-child(3) .circle-level").delay(300).animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(2) td:nth-child(4) .circle-level").delay(400).animate({backgroundColor: '#27ae60'}, 500);
-
-    $("table tr:nth-child(3) td:nth-child(2) .circle-level").delay(500).animate({backgroundColor: '#27ae60'}, 500);
-    
-    $("table tr:nth-child(4) td:nth-child(2) .circle-level").delay(600).animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(4) td:nth-child(3) .circle-level").delay(700).animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(4) td:nth-child(4) .circle-level").delay(800).animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(4) td:nth-child(5) .circle-level").delay(900).animate({backgroundColor: '#27ae60'}, 500);
+    laungageItem(1, 2);
+    laungageItem(2, 3);
+    laungageItem(3, 1);
+    laungageItem(4, 4);
 };
             
             $(document).ready(function(){
