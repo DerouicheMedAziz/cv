@@ -1,4 +1,6 @@
 var x, y;
+
+var laungageDelay = 0;
             
 var educationLaunch = false;
 var laungagesLaunch = false;
@@ -15,6 +17,13 @@ var laungagesBottomPosition;
 var skillsHeight;
 var skillsTopPosition;
 var skillsBottomPosition;
+
+function laungageItem(i, l){
+    for(c = 1; c <= l; c++ ){
+        $("table tr:nth-child("+i+") td:nth-child("+ (c+1) +") .circle-level").delay(laungageDelay).animate({backgroundColor: '#27ae60'}, 500);
+        laungageDelay = laungageDelay + 150;
+    }
+}
 
 var header = function(){
     $(".img").delay(300).animate({marginLeft: '0px', opacity: '1.0'}, "slow");
@@ -54,19 +63,10 @@ var skills = function(){
     $(".progress:nth-of-type(3) .progress-bar").animate({width: '20%'}, 1200);
 };
 var laungages = function(){
-    $("table tr:nth-child(1) td:nth-child(2) .circle-level").animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(1) td:nth-child(3) .circle-level").delay(100).animate({backgroundColor: '#27ae60'}, 500);
-    
-    $("table tr:nth-child(2) td:nth-child(2) .circle-level").delay(200).animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(2) td:nth-child(3) .circle-level").delay(300).animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(2) td:nth-child(4) .circle-level").delay(400).animate({backgroundColor: '#27ae60'}, 500);
-
-    $("table tr:nth-child(3) td:nth-child(2) .circle-level").delay(500).animate({backgroundColor: '#27ae60'}, 500);
-    
-    $("table tr:nth-child(4) td:nth-child(2) .circle-level").delay(600).animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(4) td:nth-child(3) .circle-level").delay(700).animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(4) td:nth-child(4) .circle-level").delay(800).animate({backgroundColor: '#27ae60'}, 500);
-    $("table tr:nth-child(4) td:nth-child(5) .circle-level").delay(900).animate({backgroundColor: '#27ae60'}, 500);
+    laungageItem(1, 2);
+    laungageItem(2, 3);
+    laungageItem(3, 1);
+    laungageItem(4, 4);
 };
             
             $(document).ready(function(){
