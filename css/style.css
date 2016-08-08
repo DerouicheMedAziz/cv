@@ -71,7 +71,7 @@ header {
   border-radius: 50%;
   overflow: hidden;
   padding: 5px;
-  background: #ededed;
+  background: #ecf0f1;
   opacity: 0.0;
 }
 
@@ -97,7 +97,7 @@ header div:last-child h1 {
   border-radius: 50%;
   overflow: hidden;
   padding: 5px;
-  background-color: #ededed;
+  background-color: #ecf0f1;
   opacity: 0.0;
 }
 
@@ -150,7 +150,7 @@ section:nth-child(2) .col-md-12 div:nth-child(2).table-cell {
   height: 50px;
   padding-top: 6px;
   background-color: #f1c40f;
-  color: #fff;
+  color: white;
   text-align: center;
   display: none;
 }
@@ -173,7 +173,7 @@ section:nth-child(2) .col-md-12 div:nth-child(2).table-cell {
   height: 45px;
   padding-top: 6px;
   background-color: #f1c40f;
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
@@ -264,7 +264,7 @@ table {
   height: 20px;
   border: 2px solid #27ae60;
   background-color: none;
-  color: #fff;
+  color: white;
 }
 
 /***************************** 
@@ -348,7 +348,7 @@ table {
 }
 
 .item-hobbie .label {
-  background-color: #f39c12;
+  background-color: #f1c40f;
 }
 
 .item-hobbie .label i {
