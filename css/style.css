@@ -105,16 +105,13 @@ section {
 /***************************** 
 *         EDUCATION          *
 *****************************/
-/* Setting */
 section:nth-child(2) .table {
   padding-left: 10px;
 }
-
 section:nth-child(2) .col-md-12 div:nth-child(2).table-cell {
   padding-top: 25px;
 }
-
-.time-line {
+section:nth-child(2) .time-line {
   position: absolute;
   top: 0;
   right: 0;
@@ -122,8 +119,7 @@ section:nth-child(2) .col-md-12 div:nth-child(2).table-cell {
   width: 5px;
   background-color: #f1c40f;
 }
-
-.number-circle {
+section:nth-child(2) .number-circle {
   position: absolute;
   margin-top: 20px;
   left: -28px;
