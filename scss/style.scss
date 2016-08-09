@@ -2,11 +2,51 @@
 *          IMPORTS           *
 *****************************/
 @import "variables.scss";
+@import "mixins.scss";
 
 
 
+/***************************** 
+*            BODY            *
+*****************************/
+body{
+    @include padding(60px, null, 40px, null);
+    background-color: $grey;
+}
 
 
+
+/***************************** 
+*           HEADER           *
+*****************************/
+header{
+    background: $blue;
+    .img{
+        position: absolute;
+        @include margin(-40px, null, null, -75px);
+        @include padding(5px, 5px, 5px, 5px);
+        @include circle(175px);
+        opacity: 0.0;
+    }
+    .img-xs{
+        position: absolute;
+        left: calc(50% - 50px);
+        @include margin(15px, null, null, null);
+        @include padding(5px, 5px, 5px, 5px);
+        @include circle(100px);
+        opacity: 0.0;
+    }
+    .head-title{
+        color: white;
+        opacity: 0.0; 
+    }
+    div:nth-child(2) h1, div:nth-child(2) h4{
+        padding-left: 300px;  
+    }
+    div:last-child h1{
+        padding-top: 100px;  
+    }
+}
 
 
 
@@ -35,76 +75,8 @@ section{
     background-color: white;
 }
 
-body{
-    background-color: $grey;
-    padding-top: 60px;
-    padding-bottom: 40px;
-}
-header{
-    background: $blue;
-}
-.head-extension{
-    /*background-color: blueviolet;*/
-    
-}
-.head-contents{
-    /*background: deepskyblue;*/
-}
-.head-texte{
-    /*z-index: -1;*/
-}
-.principal{
-    /*border: 1px solid black;*/
-}
-.secondary{
-    /*border: 1px solid black;*/
-}
-.img{
-    position: absolute;
-    margin-top: -40px;
-    margin-left: -75px;
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    overflow: hidden;
-    padding: 5px;
-    background: $grey;
-    opacity: 0.0;
-}
-.head-title{
-    opacity: 0.0; 
-    color: white;
-}
-header div:nth-child(2) h1, header div:nth-child(2) h4{
-    padding-left: 300px;  
-}
-header div:last-child h1{
-    padding-top: 100px;  
-}
 
 
-
-.img-xs{
-    position: absolute;
-    left: calc(50% - 50px);
-    margin-top: 15px;
-    
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    padding: 5px;
-    background-color: $grey;
-    opacity: 0.0;
-}
-.head-title-xs{
-    padding-top: 100px; 
-    opacity: 0.0; 
-    color: white;
-}
-h4.head-title-xs{
-    padding-top: 0px; 
-} 
 
 
 .table{

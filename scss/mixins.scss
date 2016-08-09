@@ -1,0 +1,35 @@
+/***************************** 
+*           SHAPES           *
+*****************************/
+@mixin circle($diameter){
+    width: $diameter;
+    height: $diameter;
+    border-radius: $diameter/2;
+}
+@mixin dimension($width, $height){
+    width: $width;
+    height: $height;
+}
+
+
+
+/***************************** 
+*           MARGIN           *
+*****************************/
+@mixin margin($top, $right, $bottom, $left){
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+
+/***************************** 
+*          PADDING           *
+*****************************/
+@mixin padding($top, $right, $bottom, $left){
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
