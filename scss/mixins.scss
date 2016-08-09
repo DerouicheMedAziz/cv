@@ -1,6 +1,35 @@
 /***************************** 
 *           SHAPES           *
 *****************************/
+@mixin slideRectangular($initialColor, $finalColor){
+    background: linear-gradient(to right, $finalColor 50%, $initialColor 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+@mixin talkbubble($width, $height, $color){
+    width: $width;
+    height: $height;
+    border: 2px solid $color;
+    border-radius: 5px;
+    background-color: $color;
+}
+@mixin time-line($width, $height, $color){
+    width: $width;
+    height: $height;
+    background-color: $color;
+}
+@mixin number-circle($size, $color){
+    @if $size == "medium"{
+        @include circle($mediumCircle);
+    }
+    @if $size == "small"{
+        @include circle($smallCircle);
+    }
+    padding-top: 6px;
+    background-color: $color;
+    color: white;
+    text-align: center;
+}
 @mixin circle($diameter){
     width: $diameter;
     height: $diameter;
