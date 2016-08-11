@@ -2,6 +2,26 @@
 *          IMPORTS           *
 *****************************/
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 400 20px/26px "Source Sans Pro", sans-serif;
+  background-color: #ecf0f1;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font: 300 16px/26px "Source Sans Pro", sans-serif;
+}
+
+strong {
+  font-weight: 600;
+}
+
 /***************************** 
 *         COMPONENTS         *
 *****************************/
@@ -14,15 +34,6 @@
 /***************************** 
 *          PADDING           *
 *****************************/
-/***************************** 
-*            BODY            *
-*****************************/
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background-color: #ecf0f1;
-}
-
 /***************************** 
 *           HEADER           *
 *****************************/

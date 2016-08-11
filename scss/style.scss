@@ -2,17 +2,8 @@
 *          IMPORTS           *
 *****************************/
 @import "variables.scss";
+@import "base.scss";
 @import "mixins.scss";
-
-
-
-/***************************** 
-*            BODY            *
-*****************************/
-body{
-    @include padding(60px, null, 40px, null);
-    background-color: $grey;
-}
 
 
 
