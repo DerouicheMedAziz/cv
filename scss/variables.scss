@@ -1,6 +1,9 @@
-/***************************** 
-*           COLORS           *
-*****************************/
+// Imports
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600';
+
+
+
+// Colors
 $grey   : #ecf0f1;
 $blue   : #3498db;
 $red    : #e74c3c;
@@ -12,8 +15,18 @@ $darkBlue : #2980b9;
 
 
 
-/***************************** 
-*          CIRCLES           *
-*****************************/
-$mediumCircle : 50px;
-$smallCircle : 45px;
+// Circles
+$mediumCircle   : 50px;
+$smallCircle    : 45px;
+
+
+
+// Fonts
+$fontFamily: 'Source Sans Pro', sans-serif;
+
+$thin   : 200;
+$normal : 400;
+$bold   : 600;
+
+$titleFont      : $bold 26px/30px $fontFamily;
+$paragraphFont  : $thin 16px/26px $fontFamily;
