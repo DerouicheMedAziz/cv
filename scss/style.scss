@@ -1,9 +1,11 @@
-/***************************** 
-*          IMPORTS           *
-*****************************/
+// Import core
 @import "variables.scss";
 @import "base.scss";
 @import "mixins.scss";
+
+
+// Import modules
+@import "modules/header.scss";
 
 
 
