@@ -1,9 +1,22 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
+@media (max-width: 767px) {
+  .section-title {
+    text-align: center;
+  }
+}
 body {
   padding-top: 60px;
   padding-bottom: 40px;
   font-family: 400 20px/26px "Source Sans Pro", sans-serif;
   background-color: #ecf0f1;
+}
+
+section {
+  margin-bottom: 10px;
+  background-color: white;
+}
+section .section-title {
+  color: #e74c3c;
 }
 
 h1, h2, h3, h4, h5 {
@@ -17,6 +30,15 @@ p {
 
 strong {
   font-weight: 600;
+}
+
+.table {
+  display: table;
+}
+
+.table-cell {
+  float: none;
+  display: table-cell;
 }
 
 /***************************** 
@@ -133,6 +155,17 @@ section:nth-child(2) .education-item {
   margin-bottom: 25px;
   padding-left: 30px;
   padding-right: 10px;
+}
+
+.text-education {
+  display: inline-block;
+  color: white;
+}
+
+.text-education-xs {
+  display: inline-block;
+  color: white;
+  opacity: 0.0;
 }
 
 .experience-title {
@@ -274,43 +307,6 @@ table {
 .item-hobbie .label i {
   margin-left: -5px;
   margin-right: 2px;
-}
-
-/***************************** 
-*          General           *
-*****************************/
-@media (max-width: 767px) {
-  .section-title {
-    text-align: center;
-  }
-}
-.section-title {
-  color: #e74c3c;
-}
-
-.text-education {
-  display: inline-block;
-  color: white;
-}
-
-.text-education-xs {
-  display: inline-block;
-  color: white;
-  opacity: 0.0;
-}
-
-section {
-  margin-bottom: 10px;
-  background-color: white;
-}
-
-.table {
-  display: table;
-}
-
-.table-cell {
-  float: none;
-  display: table-cell;
 }
 
 /*# sourceMappingURL=style.css.map */
