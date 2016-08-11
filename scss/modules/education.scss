@@ -1,0 +1,51 @@
+section:nth-child(2){
+    .table{
+        padding-left: 10px;
+    }
+    .col-md-12 div:nth-child(2).table-cell{
+        padding-top: 25px;
+    }
+    .time-line{
+        position: absolute;
+        @include time-line(5px, 0%, $yellow);
+        top: 0;
+        right: 0;
+    }
+    .number-circle{
+        @include number-circle($mediumCircle, $yellow);
+        position: absolute;
+        margin-top: 20px;
+        left: -28px;
+        display: none;
+    }
+    .number-circle-xs{
+        @include number-circle($smallCircle, $yellow);
+        display: none;
+        position: absolute;
+        left: -25px;
+        display: none;
+    }
+    .talkbubble {
+        @include talkbubble(100%, 100%, $orange);
+        margin-left: 100px;
+        margin-bottom: 15px;
+        opacity: 0.0;
+    }
+    .talkbubble:before {
+        content:"";
+        position: absolute;
+        right: 100%;
+        top: 28px;
+        width: 0;
+        height: 0;
+        border-top: 14px solid transparent;
+        border-right: 14px solid $orange;
+        border-bottom: 14px solid transparent;
+    }
+    .education-item{
+        @include slideRectangular(white, $orange);
+        margin-bottom: 25px;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+}
