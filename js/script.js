@@ -55,12 +55,12 @@ var education = function(){
 };
 var educationXS = function(){
     $(".time-line").animate({height: '100%'}, 800);
-    $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(1) .number-circle-xs").fadeIn("slow");
-    $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2) .number-circle-xs").delay(400).fadeIn("slow");
+    $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(1) .number-circle").fadeIn("slow");
+    $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2) .number-circle").delay(400).fadeIn("slow");
     $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(1)").delay(800).animate({backgroundPosition: "0%"}, 400);
     $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2)").delay(1200).animate({backgroundPosition: "0%"}, 400);
-    $('.principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(1) .text-education-xs').delay(1200).animate({opacity: '1.0'}, "slow");
-    $('.principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2) .text-education-xs').delay(1600).animate({opacity: '1.0'}, "slow");
+    $('.principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(1) .education-content').delay(1200).animate({opacity: '1.0'}, "slow");
+    $('.principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2) .education-content').delay(1600).animate({opacity: '1.0'}, "slow");
 };
 var skills = function(){
     skillItem("1", "70%");
