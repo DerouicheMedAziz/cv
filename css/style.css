@@ -90,20 +90,19 @@ header div:last-child h1 {
 section:nth-child(2) .table {
   padding-left: 10px;
 }
-section:nth-child(2) .col-md-12 div:nth-child(2).table-cell {
+section:nth-child(2) .col-md-12 div:nth-child(2) .table-cell {
   padding-top: 25px;
 }
 section:nth-child(2) .time-line {
-  position: absolute;
   width: 5px;
   height: 0%;
   background-color: #f1c40f;
-  top: 0;
-  right: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 section:nth-child(2) .number-circle {
   position: absolute;
-  margin-top: 20px;
   display: none;
 }
 @media screen and (max-width: 767px) {
@@ -115,6 +114,7 @@ section:nth-child(2) .number-circle {
     background-color: #f1c40f;
     color: white;
     text-align: center;
+    margin-top: 0px;
     left: -25px;
   }
 }
@@ -127,6 +127,7 @@ section:nth-child(2) .number-circle {
     background-color: #f1c40f;
     color: white;
     text-align: center;
+    margin-top: 20px;
     left: -28px;
   }
 }
@@ -143,30 +144,34 @@ section:nth-child(2) .talkbubble {
 section:nth-child(2) .talkbubble:before {
   content: "";
   position: absolute;
+  width: 0px;
+  height: 0px;
   right: 100%;
   top: 28px;
-  width: 0;
-  height: 0;
   border-top: 14px solid transparent;
   border-right: 14px solid #e67e22;
   border-bottom: 14px solid transparent;
-}
-section:nth-child(2) .education-item {
-  background: linear-gradient(to right, #e67e22 50%, white 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  margin-bottom: 25px;
-  padding-left: 30px;
-  padding-right: 10px;
 }
 section:nth-child(2) .education-content {
   display: inline-block;
   color: white;
 }
+section:nth-child(2) .education-content h3 {
+  margin-top: 10px;
+}
 @media screen and (max-width: 767px) {
   section:nth-child(2) .education-content {
     opacity: 0.0;
   }
+}
+section:nth-child(2) .education-item {
+  background: linear-gradient(to right, #e67e22 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 10px;
 }
 
 .experience-title {
