@@ -182,29 +182,25 @@ section:nth-child(2) .education-item {
 .secondary section:nth-child(1) {
   padding-bottom: 15px;
 }
-
-.contact-item {
+.secondary section:nth-child(1) .contact-item {
   width: 100%;
   height: 40px;
 }
-
-.contact-icon {
+.secondary section:nth-child(1) .contact-item .contact-icon {
   display: inline-block;
-  line-height: 50px;
   width: 20%;
   height: 100%;
+  line-height: 50px;
   text-align: center;
   opacity: 0.3;
 }
-
-.contact-content {
+.secondary section:nth-child(1) .contact-item .contact-content {
   display: inline;
   width: 80%;
   height: 100%;
   float: right;
 }
-
-.contact-content h5 {
+.secondary section:nth-child(1) .contact-item .contact-content h5 {
   margin-left: 15px;
   line-height: 20px;
 }
