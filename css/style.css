@@ -282,18 +282,15 @@ section:nth-child(2) .education-item {
 .secondary section:nth-child(4) {
   padding-bottom: 15px;
 }
-
-.item-hobbie {
+.secondary section:nth-child(4) .item-hobbie {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 0px;
 }
-
-.item-hobbie .label {
+.secondary section:nth-child(4) .item-hobbie .label {
   background-color: #f1c40f;
 }
-
-.item-hobbie .label i {
+.secondary section:nth-child(4) .item-hobbie .label i {
   margin-left: -5px;
   margin-right: 2px;
 }
