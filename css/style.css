@@ -87,13 +87,13 @@ header div:last-child h1 {
   padding-top: 100px;
 }
 
-section:nth-child(2) .table {
+.principal section:nth-child(2) .table {
   padding-left: 10px;
 }
-section:nth-child(2) .col-md-12 div:nth-child(2) .table-cell {
+.principal section:nth-child(2) .col-md-12 div:nth-child(2) .table-cell {
   padding-top: 25px;
 }
-section:nth-child(2) .time-line {
+.principal section:nth-child(2) .time-line {
   width: 5px;
   height: 0%;
   background-color: #f1c40f;
@@ -101,12 +101,12 @@ section:nth-child(2) .time-line {
   top: 0px;
   right: 0px;
 }
-section:nth-child(2) .number-circle {
+.principal section:nth-child(2) .number-circle {
   position: absolute;
   display: none;
 }
 @media screen and (max-width: 767px) {
-  section:nth-child(2) .number-circle {
+  .principal section:nth-child(2) .number-circle {
     width: 45px;
     height: 45px;
     border-radius: 22.5px;
@@ -119,7 +119,7 @@ section:nth-child(2) .number-circle {
   }
 }
 @media screen and (min-width: 768px) {
-  section:nth-child(2) .number-circle {
+  .principal section:nth-child(2) .number-circle {
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -131,7 +131,7 @@ section:nth-child(2) .number-circle {
     left: -28px;
   }
 }
-section:nth-child(2) .talkbubble {
+.principal section:nth-child(2) .talkbubble {
   width: 100%;
   height: 100%;
   border: 2px solid #e67e22;
@@ -141,7 +141,7 @@ section:nth-child(2) .talkbubble {
   margin-bottom: 15px;
   opacity: 0.0;
 }
-section:nth-child(2) .talkbubble:before {
+.principal section:nth-child(2) .talkbubble:before {
   content: "";
   position: absolute;
   width: 0px;
@@ -152,19 +152,19 @@ section:nth-child(2) .talkbubble:before {
   border-right: 14px solid #e67e22;
   border-bottom: 14px solid transparent;
 }
-section:nth-child(2) .education-content {
+.principal section:nth-child(2) .education-content {
   display: inline-block;
   color: white;
 }
-section:nth-child(2) .education-content h3 {
+.principal section:nth-child(2) .education-content h3 {
   margin-top: 10px;
 }
 @media screen and (max-width: 767px) {
-  section:nth-child(2) .education-content {
+  .principal section:nth-child(2) .education-content {
     opacity: 0.0;
   }
 }
-section:nth-child(2) .education-item {
+.principal section:nth-child(2) .education-item {
   background: linear-gradient(to right, #e67e22 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;

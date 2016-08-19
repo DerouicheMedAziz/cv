@@ -1,70 +1,72 @@
-section:nth-child(2){
-    .table{
-        padding-left: 10px;
-    }
-    .col-md-12 div:nth-child(2){
-        .table-cell{
-            padding-top: 25px;
+.principal{
+    section:nth-child(2){
+        .table{
+            padding-left: 10px;
         }
-    }
-    .time-line{
-        @include time-line(5px, 0%, $yellow);
-        position: absolute;
-        top     : 0px;
-        right   : 0px;
-    }
-    .number-circle{
-        position: absolute;
-        display : none;
-        @media screen and (max-width: $smallScreen){
-            &{
-                @include number-circle($smallCircle, $yellow);
-                margin-top  : 0px;
-                left        : -25px;
+        .col-md-12 div:nth-child(2){
+            .table-cell{
+                padding-top: 25px;
             }
         }
-        @media screen and (min-width: $mediumScrenn){
-            &{
-                @include number-circle($mediumCircle, $yellow);
-                margin-top  : 20px;
-                left        : -28px;
+        .time-line{
+            @include time-line(5px, 0%, $yellow);
+            position: absolute;
+            top     : 0px;
+            right   : 0px;
+        }
+        .number-circle{
+            position: absolute;
+            display : none;
+            @media screen and (max-width: $smallScreen){
+                &{
+                    @include number-circle($smallCircle, $yellow);
+                    margin-top  : 0px;
+                    left        : -25px;
+                }
+            }
+            @media screen and (min-width: $mediumScrenn){
+                &{
+                    @include number-circle($mediumCircle, $yellow);
+                    margin-top  : 20px;
+                    left        : -28px;
+                }
             }
         }
-    }
-    .talkbubble {
-        @include talkbubble(100%, 100%, $orange);
-        margin-left     : 100px;
-        margin-bottom   : 15px;
-        opacity         : 0.0;
-    }
-    .talkbubble:before {
-        content      :"";
-        position     : absolute;
-        width        : 0px;
-        height       : 0px;
-        right        : 100%;
-        top          : 28px;
-        border-top   : 14px solid transparent;
-        border-right : 14px solid $orange;
-        border-bottom: 14px solid transparent;
-    }
-    .education-content{
-        display : inline-block;
-        color   : white;
-        h3{
-            margin-top: 10px;
+        .talkbubble {
+            @include talkbubble(100%, 100%, $orange);
+            margin-left     : 100px;
+            margin-bottom   : 15px;
+            opacity         : 0.0;
         }
-        @media screen and (max-width: $smallScreen){
-            &{
-                opacity: 0.0;
+        .talkbubble:before {
+            content      :"";
+            position     : absolute;
+            width        : 0px;
+            height       : 0px;
+            right        : 100%;
+            top          : 28px;
+            border-top   : 14px solid transparent;
+            border-right : 14px solid $orange;
+            border-bottom: 14px solid transparent;
+        }
+        .education-content{
+            display : inline-block;
+            color   : white;
+            h3{
+                margin-top: 10px;
+            }
+            @media screen and (max-width: $smallScreen){
+                &{
+                    opacity: 0.0;
+                }
             }
         }
-    }
-    .education-item{
-        @include slideRectangular(white, $orange);
-        margin-top   : 25px;
-        margin-bottom: 25px;
-        padding-left : 30px;
-        padding-right: 10px;
+        .education-item{
+            @include slideRectangular(white, $orange);
+            margin-top   : 25px;
+            margin-bottom: 25px;
+            padding-left : 30px;
+            padding-right: 10px;
+        }
     }
 }
