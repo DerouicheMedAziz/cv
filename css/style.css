@@ -87,27 +87,26 @@ header div:last-child h1 {
   padding-top: 100px;
 }
 
-section:nth-child(2) .table {
+.principal section:nth-child(2) .table {
   padding-left: 10px;
 }
-section:nth-child(2) .col-md-12 div:nth-child(2).table-cell {
+.principal section:nth-child(2) .col-md-12 div:nth-child(2) .table-cell {
   padding-top: 25px;
 }
-section:nth-child(2) .time-line {
-  position: absolute;
+.principal section:nth-child(2) .time-line {
   width: 5px;
   height: 0%;
   background-color: #f1c40f;
-  top: 0;
-  right: 0;
-}
-section:nth-child(2) .number-circle {
   position: absolute;
-  margin-top: 20px;
+  top: 0px;
+  right: 0px;
+}
+.principal section:nth-child(2) .number-circle {
+  position: absolute;
   display: none;
 }
 @media screen and (max-width: 767px) {
-  section:nth-child(2) .number-circle {
+  .principal section:nth-child(2) .number-circle {
     width: 45px;
     height: 45px;
     border-radius: 22.5px;
@@ -115,11 +114,12 @@ section:nth-child(2) .number-circle {
     background-color: #f1c40f;
     color: white;
     text-align: center;
+    margin-top: 0px;
     left: -25px;
   }
 }
 @media screen and (min-width: 768px) {
-  section:nth-child(2) .number-circle {
+  .principal section:nth-child(2) .number-circle {
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -127,10 +127,11 @@ section:nth-child(2) .number-circle {
     background-color: #f1c40f;
     color: white;
     text-align: center;
+    margin-top: 20px;
     left: -28px;
   }
 }
-section:nth-child(2) .talkbubble {
+.principal section:nth-child(2) .talkbubble {
   width: 100%;
   height: 100%;
   border: 2px solid #e67e22;
@@ -140,36 +141,40 @@ section:nth-child(2) .talkbubble {
   margin-bottom: 15px;
   opacity: 0.0;
 }
-section:nth-child(2) .talkbubble:before {
+.principal section:nth-child(2) .talkbubble:before {
   content: "";
   position: absolute;
+  width: 0px;
+  height: 0px;
   right: 100%;
   top: 28px;
-  width: 0;
-  height: 0;
   border-top: 14px solid transparent;
   border-right: 14px solid #e67e22;
   border-bottom: 14px solid transparent;
 }
-section:nth-child(2) .education-item {
+.principal section:nth-child(2) .education-content {
+  display: inline-block;
+  color: white;
+}
+.principal section:nth-child(2) .education-content h3 {
+  margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+  .principal section:nth-child(2) .education-content {
+    opacity: 0.0;
+  }
+}
+.principal section:nth-child(2) .education-item {
   background: linear-gradient(to right, #e67e22 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
+  margin-top: 25px;
   margin-bottom: 25px;
   padding-left: 30px;
   padding-right: 10px;
 }
-section:nth-child(2) .education-content {
-  display: inline-block;
-  color: white;
-}
-@media screen and (max-width: 767px) {
-  section:nth-child(2) .education-content {
-    opacity: 0.0;
-  }
-}
 
-.experience-title {
+.principal section:nth-child(3) .experience-title {
   display: inline-block;
   margin-top: 15px;
 }
@@ -177,135 +182,115 @@ section:nth-child(2) .education-content {
 .secondary section:nth-child(1) {
   padding-bottom: 15px;
 }
-
-.contact-item {
+.secondary section:nth-child(1) .contact-item {
   width: 100%;
   height: 40px;
 }
-
-.contact-icon {
+.secondary section:nth-child(1) .contact-item .contact-icon {
   display: inline-block;
-  line-height: 50px;
   width: 20%;
   height: 100%;
+  line-height: 50px;
   text-align: center;
   opacity: 0.3;
 }
-
-.contact-content {
+.secondary section:nth-child(1) .contact-item .contact-content {
   display: inline;
   width: 80%;
   height: 100%;
   float: right;
 }
-
-.contact-content h5 {
+.secondary section:nth-child(1) .contact-item .contact-content h5 {
   margin-left: 15px;
   line-height: 20px;
 }
 
-.progress {
+.secondary section:nth-child(2) .progress {
   margin-bottom: 15px;
   height: auto;
 }
-
-.progress-bar {
+.secondary section:nth-child(2) .progress .progress-bar {
   width: 0%;
   text-align: left;
   padding-left: 2%;
   background-color: #3498db;
 }
-
-.beginner-proficient {
+.secondary section:nth-child(2) .beg-pro, .secondary section:nth-child(2) .pro-exp, .secondary section:nth-child(2) .exp-mast {
   display: inline-block;
-  width: 40%;
   height: 10px;
+  opacity: 0.3;
+}
+.secondary section:nth-child(2) .beg-pro {
+  width: 40%;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-right: 1px solid black;
-  opacity: 0.3;
 }
-
-.proficient-expert {
-  display: inline-block;
+.secondary section:nth-child(2) .pro-exp {
   width: 30%;
-  height: 10px;
   margin-left: -4px;
   border-bottom: 2px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  opacity: 0.3;
 }
-
-.expert-master {
-  display: inline-block;
+.secondary section:nth-child(2) .exp-mast {
   width: 30%;
-  height: 10px;
   margin-left: -4px;
   border-bottom: 2px solid black;
   border-left: 1px solid black;
   border-right: 2px solid black;
-  opacity: 0.3;
 }
-
-.skills-level {
+.secondary section:nth-child(2) .skills-item {
   display: inline-block;
   margin-bottom: 10px;
   margin-left: -4px;
   opacity: 0.3;
 }
-
-.skills-level:nth-of-type(1) {
+.secondary section:nth-child(2) .skills-item:nth-of-type(1) {
   margin-left: 0px;
   width: 25%;
 }
-
-.skills-level:nth-of-type(2), .skills-level:nth-of-type(3) {
+.secondary section:nth-child(2) .skills-item:nth-of-type(2) {
   width: 30%;
 }
-
-.skills-level:nth-of-type(4) {
+.secondary section:nth-child(2) .skills-item:nth-of-type(3) {
+  width: 30%;
+}
+.secondary section:nth-child(2) .skills-item:nth-of-type(4) {
   width: 15%;
 }
 
-table {
+.secondary section:nth-child(3) table {
   width: 100%;
 }
-
-.col-title {
+.secondary section:nth-child(3) .col-title {
   width: 51%;
 }
-
-.col-circle {
+.secondary section:nth-child(3) .col-circle {
   width: 9%;
 }
-
-.circle-level {
+.secondary section:nth-child(3) .circle-level {
   position: relative;
   display: inline-block;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
+  border-radius: 10px;
   border: 2px solid #27ae60;
   background-color: none;
-  color: white;
 }
 
 .secondary section:nth-child(4) {
   padding-bottom: 15px;
 }
-
-.item-hobbie {
+.secondary section:nth-child(4) .item-hobbie {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 0px;
 }
-
-.item-hobbie .label {
+.secondary section:nth-child(4) .item-hobbie .label {
   background-color: #f1c40f;
 }
-
-.item-hobbie .label i {
+.secondary section:nth-child(4) .item-hobbie .label i {
   margin-left: -5px;
   margin-right: 2px;
 }
