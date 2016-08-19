@@ -1,19 +1,18 @@
-table{
-    width: 100%;
-}
-.col-title{
-    width: 51%;
-}
-.col-circle{
-    width: 9%;
-}         
-.circle-level{
-    position: relative;
-    display: inline-block;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    border: 2px solid $green;
-    background-color: none;
-    color: white;
+.secondary{
+    section:nth-child(3){
+        table{
+            width: 100%;
+        }
+        .col-title{
+            width: 51%;
+        }
+        .col-circle{
+            width: 9%;
+        }         
+        .circle-level{
+            position: relative;
+            display: inline-block;
+            @include circle-level($laungageCircle, $green);
+        }
+    }
 }
