@@ -6,11 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CV</title>
 
+        <script type="text/javascript">
+            var linkBootstrapStyle = document.getElementById('bootstrapStyle');
+            var linkBootstrapScript = document.getElementById('bootstrapScript');
+            
+            if(window.location.href == "https://derouichemedaziz.github.io/cv/"){
+                linkBootstrapStyle.href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+                linkBootstrapScript.setAttribute('src','//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
+            }
+            else{
+                linkBootstrapStyle.href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+                linkBootstrapScript.setAttribute('src','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
+            }
+        </script>
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link id="bootstrapStyle" rel="stylesheet">
         
         <!-- Bootstrap JavaScript -->
-        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script id="bootstrapScript" type="text/javascript"></script>
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
