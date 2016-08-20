@@ -15,6 +15,7 @@ section:nth-child(2){
         @media screen and (max-width: $smallScreen){
             &{
                 @include number-circle($smallCircle, $yellow);
+                margin-top: 0px;
                 left: -25px;
             }
         }

@@ -115,6 +115,7 @@ section:nth-child(2) .number-circle {
     background-color: #f1c40f;
     color: white;
     text-align: center;
+    margin-top: 0px;
     left: -25px;
   }
 }
