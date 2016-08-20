@@ -6,48 +6,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CV</title>
 
+        <!-- jQuery ~ v2.2.4 -->
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        
+        <!-- jQuery Plugin : Color Animation -->
+        <script src="http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+        
+        <!-- Font Awesome ~ v4.6.3 -->
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+            
+        <!-- jQuery Plugin : Strap Point ~ v0.2 -->
+        <script src="js/strapPoint-0.2.0/strapPoint.js"></script>
+        
+        <!-- Bootstrap Style & Script ~ v3.3.6 -->
         <script type="text/javascript">
             var bootstrapStyle = document.createElement('link');
             var bootstrapScript = document.createElement('script');
-            var jQuery = document.createElement('script');
-            var colorAnimation = document.createElement('script');
-            var fontAwesome = document.createElement('link');
             
             if(window.location.href == "https://derouichemedaziz.github.io/cv/"){
                 bootstrapStyle.setAttribute('rel', 'stylesheet');
                 bootstrapStyle.setAttribute('href', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
                 bootstrapScript.setAttribute('src','//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
-                colorAnimation.setAttribute('src', '//cdn.jsdelivr.net/jquery.color-animation/1.6.0/jquery.animate-colors-min.js');
-                fontAwesome.setAttribute('rel', 'stylesheet');
-                fontAwesome.setAttribute('link', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
             }
             else{
                 bootstrapStyle.setAttribute('rel', 'stylesheet');
                 bootstrapStyle.setAttribute('href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
                 bootstrapScript.setAttribute('src','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
-                colorAnimation.setAttribute('src', 'https://cdn.jsdelivr.net/jquery.color-animation/1.6.0/jquery.animate-colors-min.js');
-                fontAwesome.setAttribute('rel', 'stylesheet');
-                fontAwesome.setAttribute('link', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
             }
             
             document.head.appendChild(bootstrapStyle);
             document.head.appendChild(bootstrapScript);
-            document.head.appendChild(colorAnimation);
-            document.head.appendChild(fontAwesome);
         </script>
         
-        
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-            
-            
-        <!-- jQuery Plugin : Strap Point 0.2 -->
-        <script src="js/strapPoint-0.2.0/strapPoint.js"></script>
-        
-        <!-- The main stylesheet file -->
+        <!-- The private stylesheet file -->
         <link type="text/css" rel="stylesheet" href="css/style.css">
         
-        <!-- The main Javascript -->
+        <!-- The private script file -->
         <script type="text/javascript" src="js/script.js"></script>
         
     </head>
