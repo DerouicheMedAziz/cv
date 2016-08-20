@@ -7,35 +7,40 @@
         <title>CV</title>
 
         <script type="text/javascript">
-            var linkBootstrapStyle = document.getElementById('bootstrapStyle');
-            var linkBootstrapScript = document.getElementById('bootstrapScript');
+            var bootstrapStyle = document.createElement('link');
+            var bootstrapScript = document.createElement('script');
+            var jQuery = document.createElement('script');
+            var colorAnimation = document.createElement('script');
+            var fontAwesome = document.createElement('link');
             
             if(window.location.href == "https://derouichemedaziz.github.io/cv/"){
-                linkBootstrapStyle.href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-                linkBootstrapScript.setAttribute('src','//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
+                bootstrapStyle.setAttribute('rel', 'stylesheet');
+                bootstrapStyle.setAttribute('href', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+                bootstrapScript.setAttribute('src','//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
+                jQuery.setAttribute('src', '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js');
+                colorAnimation.setAttribute('src', '//cdn.jsdelivr.net/jquery.color-animation/1.6.0/jquery.animate-colors-min.js');
+                fontAwesome.setAttribute('rel', 'stylesheet');
+                fontAwesome.setAttribute('link', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
             }
             else{
-                linkBootstrapStyle.href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
-                linkBootstrapScript.setAttribute('src','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
+                bootstrapStyle.setAttribute('rel', 'stylesheet');
+                bootstrapStyle.setAttribute('href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+                bootstrapScript.setAttribute('src','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
+                jQuery.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js');
+                colorAnimation.setAttribute('src', 'https://cdn.jsdelivr.net/jquery.color-animation/1.6.0/jquery.animate-colors-min.js');
+                fontAwesome.setAttribute('rel', 'stylesheet');
+                fontAwesome.setAttribute('link', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
             }
+            
+            document.head.appendChild(linkStyle);
+            document.head.appendChild(linkScript);
+            document.head.appendChild(jQuery);
+            document.head.appendChild(colorAnimation);
+            document.head.appendChild(fontAwesome);
         </script>
-        <!-- Bootstrap CSS -->
-        <link id="bootstrapStyle" rel="stylesheet">
-        
-        <!-- Bootstrap JavaScript -->
-        <script id="bootstrapScript" type="text/javascript"></script>
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        
-        <!-- jQuery Plugin : color animation 1.6.0 -->
-        <script src="https://cdn.jsdelivr.net/jquery.color-animation/1.6.0/jquery.animate-colors-min.js"></script>
         
         <!-- jQuery Plugin : Strap Point 0.2 -->
         <script src="js/strapPoint-0.2.0/strapPoint.js"></script>
-        
-        <!-- Font Awesome CSS library -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         
         <!-- The main stylesheet file -->
         <link type="text/css" rel="stylesheet" href="css/style.css">
