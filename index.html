@@ -17,7 +17,6 @@
                 bootstrapStyle.setAttribute('rel', 'stylesheet');
                 bootstrapStyle.setAttribute('href', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
                 bootstrapScript.setAttribute('src','//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
-                jQuery.setAttribute('src', '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js');
                 colorAnimation.setAttribute('src', '//cdn.jsdelivr.net/jquery.color-animation/1.6.0/jquery.animate-colors-min.js');
                 fontAwesome.setAttribute('rel', 'stylesheet');
                 fontAwesome.setAttribute('link', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
@@ -26,19 +25,22 @@
                 bootstrapStyle.setAttribute('rel', 'stylesheet');
                 bootstrapStyle.setAttribute('href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
                 bootstrapScript.setAttribute('src','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
-                jQuery.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js');
                 colorAnimation.setAttribute('src', 'https://cdn.jsdelivr.net/jquery.color-animation/1.6.0/jquery.animate-colors-min.js');
                 fontAwesome.setAttribute('rel', 'stylesheet');
                 fontAwesome.setAttribute('link', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
             }
             
-            document.head.appendChild(linkStyle);
-            document.head.appendChild(linkScript);
-            document.head.appendChild(jQuery);
+            document.head.appendChild(bootstrapStyle);
+            document.head.appendChild(bootstrapScript);
             document.head.appendChild(colorAnimation);
             document.head.appendChild(fontAwesome);
         </script>
         
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            
+            
         <!-- jQuery Plugin : Strap Point 0.2 -->
         <script src="js/strapPoint-0.2.0/strapPoint.js"></script>
         
