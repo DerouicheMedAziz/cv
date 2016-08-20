@@ -87,26 +87,27 @@ header div:last-child h1 {
   padding-top: 100px;
 }
 
-.principal section:nth-child(2) .table {
+section:nth-child(2) .table {
   padding-left: 10px;
 }
-.principal section:nth-child(2) .col-md-12 div:nth-child(2) .table-cell {
+section:nth-child(2) .col-md-12 div:nth-child(2).table-cell {
   padding-top: 25px;
 }
-.principal section:nth-child(2) .time-line {
+section:nth-child(2) .time-line {
+  position: absolute;
   width: 5px;
   height: 0%;
   background-color: #f1c40f;
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
 }
-.principal section:nth-child(2) .number-circle {
+section:nth-child(2) .number-circle {
   position: absolute;
+  margin-top: 20px;
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .principal section:nth-child(2) .number-circle {
+  section:nth-child(2) .number-circle {
     width: 45px;
     height: 45px;
     border-radius: 22.5px;
@@ -114,12 +115,11 @@ header div:last-child h1 {
     background-color: #f1c40f;
     color: white;
     text-align: center;
-    margin-top: 0px;
     left: -25px;
   }
 }
 @media screen and (min-width: 768px) {
-  .principal section:nth-child(2) .number-circle {
+  section:nth-child(2) .number-circle {
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -127,11 +127,10 @@ header div:last-child h1 {
     background-color: #f1c40f;
     color: white;
     text-align: center;
-    margin-top: 20px;
     left: -28px;
   }
 }
-.principal section:nth-child(2) .talkbubble {
+section:nth-child(2) .talkbubble {
   width: 100%;
   height: 100%;
   border: 2px solid #e67e22;
@@ -141,40 +140,36 @@ header div:last-child h1 {
   margin-bottom: 15px;
   opacity: 0.0;
 }
-.principal section:nth-child(2) .talkbubble:before {
+section:nth-child(2) .talkbubble:before {
   content: "";
   position: absolute;
-  width: 0px;
-  height: 0px;
   right: 100%;
   top: 28px;
+  width: 0;
+  height: 0;
   border-top: 14px solid transparent;
   border-right: 14px solid #e67e22;
   border-bottom: 14px solid transparent;
 }
-.principal section:nth-child(2) .education-content {
-  display: inline-block;
-  color: white;
-}
-.principal section:nth-child(2) .education-content h3 {
-  margin-top: 10px;
-}
-@media screen and (max-width: 767px) {
-  .principal section:nth-child(2) .education-content {
-    opacity: 0.0;
-  }
-}
-.principal section:nth-child(2) .education-item {
+section:nth-child(2) .education-item {
   background: linear-gradient(to right, #e67e22 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  margin-top: 25px;
   margin-bottom: 25px;
   padding-left: 30px;
   padding-right: 10px;
 }
+section:nth-child(2) .education-content {
+  display: inline-block;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  section:nth-child(2) .education-content {
+    opacity: 0.0;
+  }
+}
 
-.principal section:nth-child(3) .experience-title {
+.experience-title {
   display: inline-block;
   margin-top: 15px;
 }
@@ -182,115 +177,135 @@ header div:last-child h1 {
 .secondary section:nth-child(1) {
   padding-bottom: 15px;
 }
-.secondary section:nth-child(1) .contact-item {
+
+.contact-item {
   width: 100%;
   height: 40px;
 }
-.secondary section:nth-child(1) .contact-item .contact-icon {
+
+.contact-icon {
   display: inline-block;
+  line-height: 50px;
   width: 20%;
   height: 100%;
-  line-height: 50px;
   text-align: center;
   opacity: 0.3;
 }
-.secondary section:nth-child(1) .contact-item .contact-content {
+
+.contact-content {
   display: inline;
   width: 80%;
   height: 100%;
   float: right;
 }
-.secondary section:nth-child(1) .contact-item .contact-content h5 {
+
+.contact-content h5 {
   margin-left: 15px;
   line-height: 20px;
 }
 
-.secondary section:nth-child(2) .progress {
+.progress {
   margin-bottom: 15px;
   height: auto;
 }
-.secondary section:nth-child(2) .progress .progress-bar {
+
+.progress-bar {
   width: 0%;
   text-align: left;
   padding-left: 2%;
   background-color: #3498db;
 }
-.secondary section:nth-child(2) .beg-pro, .secondary section:nth-child(2) .pro-exp, .secondary section:nth-child(2) .exp-mast {
+
+.beginner-proficient {
   display: inline-block;
-  height: 10px;
-  opacity: 0.3;
-}
-.secondary section:nth-child(2) .beg-pro {
   width: 40%;
+  height: 10px;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-right: 1px solid black;
+  opacity: 0.3;
 }
-.secondary section:nth-child(2) .pro-exp {
+
+.proficient-expert {
+  display: inline-block;
   width: 30%;
+  height: 10px;
   margin-left: -4px;
   border-bottom: 2px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
+  opacity: 0.3;
 }
-.secondary section:nth-child(2) .exp-mast {
+
+.expert-master {
+  display: inline-block;
   width: 30%;
+  height: 10px;
   margin-left: -4px;
   border-bottom: 2px solid black;
   border-left: 1px solid black;
   border-right: 2px solid black;
+  opacity: 0.3;
 }
-.secondary section:nth-child(2) .skills-item {
+
+.skills-level {
   display: inline-block;
   margin-bottom: 10px;
   margin-left: -4px;
   opacity: 0.3;
 }
-.secondary section:nth-child(2) .skills-item:nth-of-type(1) {
+
+.skills-level:nth-of-type(1) {
   margin-left: 0px;
   width: 25%;
 }
-.secondary section:nth-child(2) .skills-item:nth-of-type(2) {
+
+.skills-level:nth-of-type(2), .skills-level:nth-of-type(3) {
   width: 30%;
 }
-.secondary section:nth-child(2) .skills-item:nth-of-type(3) {
-  width: 30%;
-}
-.secondary section:nth-child(2) .skills-item:nth-of-type(4) {
+
+.skills-level:nth-of-type(4) {
   width: 15%;
 }
 
-.secondary section:nth-child(3) table {
+table {
   width: 100%;
 }
-.secondary section:nth-child(3) .col-title {
+
+.col-title {
   width: 51%;
 }
-.secondary section:nth-child(3) .col-circle {
+
+.col-circle {
   width: 9%;
 }
-.secondary section:nth-child(3) .circle-level {
+
+.circle-level {
   position: relative;
   display: inline-block;
+  border-radius: 50%;
   width: 20px;
   height: 20px;
-  border-radius: 10px;
   border: 2px solid #27ae60;
   background-color: none;
+  color: white;
 }
 
 .secondary section:nth-child(4) {
   padding-bottom: 15px;
 }
-.secondary section:nth-child(4) .item-hobbie {
+
+.item-hobbie {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 0px;
 }
-.secondary section:nth-child(4) .item-hobbie .label {
+
+.item-hobbie .label {
   background-color: #f1c40f;
 }
-.secondary section:nth-child(4) .item-hobbie .label i {
+
+.item-hobbie .label i {
   margin-left: -5px;
   margin-right: 2px;
 }
