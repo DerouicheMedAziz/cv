@@ -9,8 +9,7 @@
         <!-- jQuery ~ v2.2.4 -->
         <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
         
-        <!-- jQuery Plugin : Color Animation -->
-        <script src="http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+        
         
         <!-- Font Awesome ~ v4.6.3 -->
         <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
@@ -22,21 +21,27 @@
         <script type="text/javascript">
             var bootstrapStyle = document.createElement('link');
             var bootstrapScript = document.createElement('script');
+            var colorAnimation = document.createElement('script');
             
             if(window.location.href == "https://derouichemedaziz.github.io/cv/"){
                 bootstrapStyle.setAttribute('rel', 'stylesheet');
                 bootstrapStyle.setAttribute('href', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
                 bootstrapScript.setAttribute('src','//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
+                colorAnimation.setAttribute('src', '//cdn.jsdelivr.net/jquery.color-animation/1/mainfile');
             }
             else{
                 bootstrapStyle.setAttribute('rel', 'stylesheet');
                 bootstrapStyle.setAttribute('href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
                 bootstrapScript.setAttribute('src','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
+                colorAnimation.setAttribute('src', 'http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile');
             }
             
             document.head.appendChild(bootstrapStyle);
             document.head.appendChild(bootstrapScript);
         </script>
+        
+        <!-- jQuery Plugin : Color Animation 
+        <script src="http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script> -->
         
         <!-- The private stylesheet file -->
         <link type="text/css" rel="stylesheet" href="css/style.css">
