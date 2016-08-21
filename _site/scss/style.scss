@@ -1,0 +1,15 @@
+// Import core
+@import "variables.scss";
+@import "base.scss";
+@import "mixins.scss";
+
+
+// Import modules
+@import "modules/header.scss";
+@import "modules/about_me.scss";
+@import "modules/education.scss";
+@import "modules/experience.scss";
+@import "modules/contact.scss";
+@import "modules/skill.scss";
+@import "modules/laungage.scss";
+@import "modules/hobbie.scss";

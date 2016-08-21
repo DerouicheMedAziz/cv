@@ -1,0 +1,29 @@
+header{
+    background: $blue;
+    .img{
+        position: absolute;
+        margin-top: -40px;
+        margin-left: -75px;
+        padding: 5px;
+        @include circle(175px);
+        opacity: 0.0;
+    }
+    .img-xs{
+        position: absolute;
+        left: calc(50% - 50px);
+        margin-top: 15px;
+        padding: 5px;
+        @include circle(100px);
+        opacity: 0.0;
+    }
+    .head-title{
+        color: white;
+        opacity: 0.0; 
+    }
+    div:nth-child(2) h1, div:nth-child(2) h4{
+        padding-left: 300px;  
+    }
+    div:last-child h1{
+        padding-top: 100px;  
+    }
+}

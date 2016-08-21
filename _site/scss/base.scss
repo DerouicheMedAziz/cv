@@ -1,0 +1,39 @@
+// Media
+@media (max-width: 767px) {
+    .section-title{
+        text-align: center;
+    }
+}
+
+
+
+body{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-family: $mainFont;
+    background-color: $grey;
+}
+section{
+    margin-bottom: 10px;
+    background-color: white;
+    .section-title{
+        color: $red;
+    }
+}
+h1, h2, h3, h4, h5{
+    font-family: $fontFamily;
+    font-weight: $normal;
+}
+p{
+    font: $paragraphFont;
+}
+strong{
+    font-weight: $bold;
+}
+.table{
+    display: table;
+}
+.table-cell{
+    float: none;
+    display: table-cell;
+}
