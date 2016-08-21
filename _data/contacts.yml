@@ -1,0 +1,18 @@
+---
+title: Contacts
+date: 2016-08-12 17:30:00
+category: Contacts
+
+items:
+    - type: Mobile
+      content: +216 52 859 386
+      
+    - type: E-Mail
+      content: derouiche.aziz@gmail.com
+    
+    - type: Facebook
+      content: facebook.com/derouiche.aziz
+      
+    - type: Skype
+      content: derouiche.aziz
+...

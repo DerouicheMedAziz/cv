@@ -1,0 +1,14 @@
+---
+title: Euducations
+date: 2016-08-21 15:20:00
+category: Educations
+
+items:
+    - education_title: I was born in Katowice
+      terminal_date: 2004-06-15
+      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem, totam, dolores iste dolore est aut modi.
+    
+    - education_title: Secondary school specializing in artistic
+      terminal_date: 2007-07-20
+      content: Eos, explicabo, nam, tenetur et ab eius deserunt aspernatur ipsum ducimus quibusdam quis voluptatibus.
+...

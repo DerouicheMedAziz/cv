@@ -1,0 +1,18 @@
+---
+title: Laungages
+date: 2016-08-12 17:50:00
+category: Laungages
+
+items:
+    - laungage: English
+      level: 2
+      
+    - laungage: French
+      level: 3
+      
+    - laungage: Deutsch
+      level: 2
+      
+    - laungage: Arabic
+      level: 4
+...
