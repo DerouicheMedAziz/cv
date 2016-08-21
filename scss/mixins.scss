@@ -30,59 +30,6 @@
     color: white;
     text-align: center;
 }
-@mixin circle-level($argDiameter, $argColor){
-    @include circle($argDiameter);
-    border          : 2px solid $argColor;
-    background-color: none;
-}
-@mixin levelScale($proLevel, $expLevel, $mastLevel){
-    .beg-pro, .pro-exp, .exp-mast{
-        display : inline-block;
-        height  : 10px;
-        opacity : 0.3;
-    }
-    .beg-pro{
-        width: $proLevel;
-        border-bottom   : 2px solid black;
-        border-left     : 2px solid black;
-        border-right    : 1px solid black;
-    }
-    .pro-exp{
-        width: $expLevel - $proLevel;
-        margin-left     : -4px;
-        border-bottom   : 2px solid black;
-        border-left     : 1px solid black;
-        border-right    : 1px solid black;
-    }
-    .exp-mast{
-        width           : $mastLevel - $expLevel;
-        margin-left     : -4px;
-        border-bottom   : 2px solid black;
-        border-left     : 1px solid black;
-        border-right    : 2px solid black;
-    }
-}
-@mixin levelItem($argBeginnerItem, $argProficientItem, $argExpertItem, $argMasterItem){
-    &{
-        display         : inline-block;
-        margin-bottom   : 10px;
-        margin-left     : -4px;
-        opacity         : 0.3;
-    }
-    &:nth-of-type(1){
-        margin-left : 0px;
-        width       : $argBeginnerItem;
-    }
-    &:nth-of-type(2){
-        width       : $argProficientItem;
-    }
-    &:nth-of-type(3){
-        width       : $argExpertItem;
-    }
-    &:nth-of-type(4){
-        width       : $argMasterItem;
-    }  
-}
 
 /***************************** 
 *           SHAPES           *

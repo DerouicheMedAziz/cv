@@ -6,28 +6,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CV</title>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery ~ v2.2.4 -->
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
         
-        <!-- Bootstrap JavaScript -->
-        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         
-        <!-- jQuery Plugin : color animation 1.6.0 -->
-        <script src="https://cdn.jsdelivr.net/jquery.color-animation/1.6.0/jquery.animate-colors-min.js"></script>
         
-        <!-- jQuery Plugin : Strap Point 0.2 -->
+        <!-- Font Awesome ~ v4.6.3 -->
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+            
+        <!-- jQuery Plugin : Strap Point ~ v0.2 -->
         <script src="js/strapPoint-0.2.0/strapPoint.js"></script>
         
-        <!-- Font Awesome CSS library -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <!-- Bootstrap Style & Script ~ v3.3.6 -->
+        <script type="text/javascript">
+            var bootstrapStyle = document.createElement('link');
+            var bootstrapScript = document.createElement('script');
+            var colorAnimation = document.createElement('script');
+            
+            if(window.location.href == "https://derouichemedaziz.github.io/cv/"){
+                bootstrapStyle.setAttribute('rel', 'stylesheet');
+                bootstrapStyle.setAttribute('href', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+                bootstrapScript.setAttribute('src','//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
+                colorAnimation.setAttribute('src', '//cdn.jsdelivr.net/jquery.color-animation/1/mainfile');
+            }
+            else{
+                bootstrapStyle.setAttribute('rel', 'stylesheet');
+                bootstrapStyle.setAttribute('href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+                bootstrapScript.setAttribute('src','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
+                colorAnimation.setAttribute('src', 'http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile');
+            }
+            
+            document.head.appendChild(bootstrapStyle);
+            document.head.appendChild(bootstrapScript);
+            document.head.appendChild(colorAnimation);
+        </script>
         
-        <!-- The main stylesheet file -->
+        <!-- jQuery Plugin : Color Animation 
+        <script src="http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script> -->
+        
+        <!-- The private stylesheet file -->
         <link type="text/css" rel="stylesheet" href="css/style.css">
         
-        <!-- The main Javascript -->
+        <!-- The private script file -->
         <script type="text/javascript" src="js/script.js"></script>
         
     </head>
@@ -234,13 +254,13 @@
                             |                                                                                                                    |
                             +-------------------------------------------------------------------------------------------------------------------->
                             
-                            <div class="beg-pro"></div>
-                            <div class="pro-exp"></div>
-                            <div class="exp-mast"></div>
-                            <span class="skills-item">Beginner</span>
-                            <span class="skills-item text-center">Proficient</span>
-                            <span class="skills-item text-center">Expert</span>
-                            <span class="skills-item text-right">Master</span>
+                            <div class="beginner-proficient"></div>
+                            <div class="proficient-expert"></div>
+                            <div class="expert-master"></div>
+                            <span class="skills-level">Beginner</span>
+                            <span class="skills-level text-center">Proficient</span>
+                            <span class="skills-level text-center">Expert</span>
+                            <span class="skills-level text-right">Master</span>
                         </div>
                     </section>
                     <!-- LAUNGAGES -->
