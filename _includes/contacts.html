@@ -1,0 +1,18 @@
+<section class="row">
+    <div class="col-md-12">
+        
+        <h3 class="section-title"><strong>// CONTACT</strong></h3>
+        
+        {% for item in site.data.contacts.items %}
+        <div class="contact-item">  
+            <div class="contact-icon">  
+                <i class="{{ item.icon }}"></i>  
+            </div>  
+            <div class="contact-content">
+                <h5>{{ item.content }}</h5>
+            </div>  
+        </div>
+        {% endfor %}
+        
+    </div>                       
+</section>

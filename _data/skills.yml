@@ -1,0 +1,15 @@
+---
+title: Skills
+date: 2016-08-12 17:40:00
+category: Skills
+
+items:
+    - skill: HTML
+      level: 50%
+      
+    - skill: CSS
+      level: 30%
+      
+    - skill: JavaScript
+      level: 30%
+...
