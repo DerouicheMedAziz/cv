@@ -1,0 +1,64 @@
+section:nth-child(2){
+    .table{
+        padding-left: 10px;
+    }
+    .col-md-12 div:nth-child(2).table-cell{
+        padding-top: 25px;
+    }
+    .time-line{
+        position: absolute;
+        @include time-line(5px, 0%, $yellow);
+        top: 0;
+        right: 0;
+    }
+    .number-circle{
+        @media screen and (max-width: $smallScreen){
+            &{
+                @include number-circle($smallCircle, $yellow);
+                margin-top: 0px;
+                left: -25px;
+            }
+        }
+        @media screen and (min-width: $mediumScrenn){
+            &{
+                @include number-circle($mediumCircle, $yellow);
+                left: -28px;
+            }
+        }
+        position: absolute;
+        margin-top: 20px;
+        display: none;
+    }
+    .talkbubble {
+        @include talkbubble(100%, 100%, $orange);
+        margin-left: 100px;
+        margin-bottom: 15px;
+        opacity: 0.0;
+    }
+    .talkbubble:before {
+        content:"";
+        position: absolute;
+        right: 100%;
+        top: 28px;
+        width: 0;
+        height: 0;
+        border-top: 14px solid transparent;
+        border-right: 14px solid $orange;
+        border-bottom: 14px solid transparent;
+    }
+    .education-item{
+        @include slideRectangular(white, $orange);
+        margin-bottom: 25px;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    .education-content{
+    @media screen and (max-width: $smallScreen){
+        &{
+            opacity: 0.0;
+        }
+    }
+    display: inline-block;
+    color: white;
+    }
+}
