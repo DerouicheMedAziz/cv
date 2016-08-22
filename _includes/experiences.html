@@ -1,0 +1,28 @@
+<section class="row">
+    <div class="col-md-12">
+        
+        <h3 class="section-title"><strong>// EXPERIENCES</strong></h3>
+        
+        {% for item in site.data.experiences.items %}
+        <div class="hidden-xs row">
+            <span class="col-sm-2 experience-title">
+                <h4>{{ item.company }}</br><small>{{ item.beginning_date | date: "%Y" }}-{{ item.finishing_date | date: "%Y" }}</small></h4>
+            </span>
+            <span class="col-sm-10">
+                <h3>{{ item.post }}</h3>
+                <p align="justify">{{ item.content }}</p>
+            </span>
+        </div>
+        {% endfor %}
+        
+        {% for item in site.data.experiences.items %}
+        <div class="visible-xs row">
+            <span class="col-xs-12">
+                <h3>{{ item.company }}: <small>{{ item.beginning_date | date: "%Y" }}-{{ item.finishing_date | date: "%Y" }}</small></h3>
+                <p align="justify"><strong>{{ item.post }}: </strong>{{ item.content }}</p>
+            </span>
+        </div>
+        {% endfor %}
+    
+    </div>
+</section>

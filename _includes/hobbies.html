@@ -1,0 +1,15 @@
+<section class="row">
+    <div class="col-md-12">
+        
+        <h3 class="section-title"><strong>// HOBBIES</strong></h3>
+        
+        {% for item in site.data.hobbies.items %}
+        <h3 class="item-hobbie">
+            <span class="label label-default">
+                <i class="fa fa-heart fa-fw" aria-hidden="true"></i>{{ item.hobbie }}
+            </span>
+        </h3>
+        {% endfor %}
+
+    </div>
+</section>
