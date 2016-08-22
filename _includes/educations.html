@@ -1,52 +1,44 @@
 <section class="row">
     <div class="col-md-12">
+        
         <h3 class="section-title"><strong>// EDUCATION</strong></h3>
+        
         <div class="hidden-xs row table">
             <div class="col-sm-1 table-cell">
                 <div class="time-line"></div>
             </div>
             <div class="col-sm-10 table-cell">
+                {% for item in site.data.educations.items %}
                 <div class="row">
-                    <div class="number-circle"><h4>2004</h4></div>
+                    <div class="number-circle"><h4>{{ item.terminal_date | date: "%Y" }}</h4></div>
                     <div class="col-md-12 talkbubble">
                         <span class="education-content">
-                            <h3>I was born in Katowice</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem, totam, dolores iste dolore est aut modi.</p>
+                            <h3>{{ item.education_title }}</h3>
+                            <p>{{ item.content }}</p>
                         </span>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="number-circle"><h4>2006</h4></div>
-                    <div class="col-md-12 talkbubble">
-                        <span class="education-content">
-                            <h3>Secondary school specializing in artistic</h3>
-                            <p>Eos, explicabo, nam, tenetur et ab eius deserunt aspernatur ipsum ducimus quibusdam quis voluptatibus.</p>
-                        </span>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
             <div class="col-sm-1 table-cell"></div>
         </div>
+        
         <div class="visible-xs row table">
             <div class="col-xs-1 table-cell">
                 <div class="time-line"></div>
             </div>  
             <div class="col-xs-11 table-cell">
+                {% for item in site.data.educations.items %}
                 <div class="row education-item">
-                    <div class="number-circle"><h5>2004</h5></div>
+                    <div class="number-circle"><h5>{{ item.terminal_date | date: "%Y" }}</h5></div>
                     <span class="education-content">
-                        <h4>I was born in Katowice</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem, totam, dolores iste dolore est aut modi.</p>
+                        <h4>{{ item.education_title }}</h4>
+                        <p>{{ item.content }}</p>
                     </span>
                 </div>
-                <div class="row education-item">
-                    <div class="number-circle"><h5>2006</h5></div>
-                    <span class="education-content">
-                        <h4>Secondary school specializing in artistic</h4>
-                        <p>Eos, explicabo, nam, tenetur et ab eius deserunt aspernatur ipsum ducimus quibusdam quis voluptatibus.</p>
-                    </span>
-                </div>
+                {% endfor %}
             </div>
-        </div> 
+        </div>
+        
     </div>
 </section>

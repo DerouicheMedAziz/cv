@@ -4,12 +4,14 @@ date: 2016-08-21 15:20:00
 category: Experiences
 
 items:
-    - beginning_date: 2002-10-05
+    - company: Twitter
+      beginning_date: 2002-10-05
       finishing_date: 2003-07-20
       post: Front-end developer / php programmer
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia.
 
-    - beginning_date: 2004-10-05
+    - company: Google
+      beginning_date: 2004-10-05
       finishing_date: 2007-07-20
       post: Web Developer
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nihil sit nemo voluptatem praesentium. Quia, qui facere consectetur libero asperiores fugiat consequuntur deserunt culpa repudiandae sed quidem voluptas explicabo soluta.

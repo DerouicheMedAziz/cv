@@ -1,51 +1,18 @@
 <section class="row">
     <div class="col-md-12">
+        
         <h3 class="section-title"><strong>// CONTACT</strong></h3>
+        
+        {% for item in site.data.contacts.items %}
         <div class="contact-item">  
             <div class="contact-icon">  
-                <i class="fa fa-mobile fa-2x"></i>  
+                <i class="{{ item.icon }}"></i>  
             </div>  
-            <div class="contact-content">  
-                <h5>+216 52 859 386</h5>  
+            <div class="contact-content">
+                <h5>{{ item.content }}</h5>
             </div>  
-        </div>  
-        <div class="contact-item">  
-            <div class="contact-icon">  
-                <i class="fa fa-envelope fa-2x"></i>  
-            </div>  
-            <div class="contact-content">  
-                <h5>derouiche.aziz@gmail.com</h5>  
-            </div>  
-        </div>  
-        <div class="contact-item">  
-            <div class="contact-icon">  
-                <i class="fa fa-facebook-square fa-2x"></i>  
-            </div>  
-            <div class="contact-content">  
-                <h5>facebook.com/derouiche.aziz</h5>  
-            </div>  
-        </div>  
-        <div class="contact-item">  
-            <div class="contact-icon">  
-                <i class="fa fa-skype fa-2x"></i>  
-            </div>  
-            <div class="contact-content">  
-                <h5>derouiche.aziz</h5>  
-            </div>  
-        </div> 
-
-        <!------------ Add contact item --------------
-
-            <div class="contact-item">  
-                <div class="contact-icon">  
-                    <i class="fa fa-xxxxxx fa-2x"></i>  
-                </div>  
-                <div class="contact-content">  
-                    <h5>xxxxxxxxxx</h5>  
-                </div>  
-            </div> 
-
-        --------------------------------------------->
-
+        </div>
+        {% endfor %}
+        
     </div>                       
 </section>

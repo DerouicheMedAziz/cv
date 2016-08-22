@@ -2,52 +2,18 @@
     <div class="col-md-12">
         <h3 class="section-title"><strong>// LAUNGAGES</strong></h3>
         <table>
+            
+            {% for item in site.data.laungages.items %}
             <tr>
-                <td class="col-title"><h4>English</h4></td>
+                <td class="col-title"><h4>{{ item.laungage }}</h4></td>
                 <td class="col-circle"><div class="circle-level"></div></td>
                 <td class="col-circle"><div class="circle-level"></div></td>
                 <td class="col-circle"><div class="circle-level"></div></td>
                 <td class="col-circle"><div class="circle-level"></div></td>
                 <td class="col-circle"><div class="circle-level"></div></td>
             </tr>
-            <tr>
-                <td class="col-title"><h4>French</h4></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-            </tr>
-            <tr>
-                <td class="col-title"><h4>Deutsch</h4></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-            </tr>
-            <tr>
-                <td class="col-title"><h4>Arabic</h4></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-                <td class="col-circle"><div class="circle-level"></div></td>
-            </tr>
-
-            <!--------------------------- * Add your laungage item here * --------------------------+
-            |                                                                                       |
-            |    <tr>                                                                               |
-            |        <td class="col-title"><h4>LAUNGAGE NAME</h4></td>                              |
-            |        <td class="col-circle"><div class="circle-level"></div></td>                   |
-            |        <td class="col-circle"><div class="circle-level"></div></td>                   |
-            |        <td class="col-circle"><div class="circle-level"></div></td>                   |
-            |        <td class="col-circle"><div class="circle-level"></div></td>                   |
-            |        <td class="col-circle"><div class="circle-level"></div></td>                   |
-            |    </tr>                                                                              |
-            |                                                                                       |
-            +--------------------------------------------------------------------------------------->
-
+            {% endfor %}
+            
         </table>
     </div>
 </section>

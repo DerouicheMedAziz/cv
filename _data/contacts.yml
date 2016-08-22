@@ -5,14 +5,18 @@ category: Contacts
 
 items:
     - type: Mobile
+      icon: fa fa-mobile fa-2x
       content: +216 52 859 386
       
     - type: E-Mail
+      icon: fa fa-envelope fa-2x
       content: derouiche.aziz@gmail.com
     
     - type: Facebook
+      icon: fa fa-facebook-square fa-2x
       content: facebook.com/derouiche.aziz
       
     - type: Skype
+      icon: fa fa-skype fa-2x
       content: derouiche.aziz
 ...
