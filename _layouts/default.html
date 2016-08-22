@@ -6,49 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CV</title>
 
-        <!-- jQuery ~ v2.2.4 -->
-        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        <!-- Bootsratp style ~ v3.3.7 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
-        
-        
-        <!-- Font Awesome ~ v4.6.3 -->
+        <!-- Font Awesome style ~ v4.6.3 -->
         <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
-            
-        <!-- jQuery Plugin : Strap Point ~ v0.2 -->
-        <script src="js/strapPoint-0.2.0/strapPoint.js"></script>
-        
-        <!-- Bootstrap Style & Script ~ v3.3.6 -->
-        <script type="text/javascript">
-            var bootstrapStyle = document.createElement('link');
-            var bootstrapScript = document.createElement('script');
-            var colorAnimation = document.createElement('script');
-            
-            if(window.location.href == "https://derouichemedaziz.github.io/cv/"){
-                bootstrapStyle.setAttribute('rel', 'stylesheet');
-                bootstrapStyle.setAttribute('href', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
-                bootstrapScript.setAttribute('src','//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
-                colorAnimation.setAttribute('src', '//cdn.jsdelivr.net/jquery.color-animation/1/mainfile');
-            }
-            else{
-                bootstrapStyle.setAttribute('rel', 'stylesheet');
-                bootstrapStyle.setAttribute('href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
-                bootstrapScript.setAttribute('src','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
-                colorAnimation.setAttribute('src', 'http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile');
-            }
-            
-            document.head.appendChild(bootstrapStyle);
-            document.head.appendChild(bootstrapScript);
-            document.head.appendChild(colorAnimation);
-        </script>
-        
-        <!-- jQuery Plugin : Color Animation 
-        <script src="http://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script> -->
-        
-        <!-- The private stylesheet file -->
         <link type="text/css" rel="stylesheet" href="css/style.css">
         
-        <!-- The private script file -->
-        <script type="text/javascript" src="js/script.js"></script>
+        <!-- The private stylesheet file -->  
+        <link type="text/css" rel="stylesheet" href="css/style.css">  
         
     </head>
     <body>
@@ -69,12 +35,22 @@
                     <h4 class="visible-xs text-center head-title">MY NAME IS AZIZ AND THIS IS MY RESUME/CV</h4>
                 </div>
             </header>
-            <!--------------------------+
-            |          CONTENT          |
-            +--------------------------->
+            
             {{ content }}
-        
     
-    </div>
+        </div>
+        
+        <!-- jQuery ~ v3.1.0 -->  
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        
+        <!-- jQuery Plugin : Strap Point ~ v0.2 -->  
+        <script src="js/strapPoint-0.2.0/strapPoint.js"></script>  
+        
+        <!-- Bootstrap script ~ v3.3.7 -->  
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+        
+        <!-- The private script file -->  
+        <script type="text/javascript" src="js/script.js"></script>
+        
     </body>
 </html>
