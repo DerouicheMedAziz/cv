@@ -1,0 +1,68 @@
+/***************************** 
+*         COMPONENTS         *
+*****************************/
+@mixin slideRectangular($initialColor, $finalColor){
+    background: linear-gradient(to right, $finalColor 50%, $initialColor 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+@mixin talkbubble($width, $height, $color){
+    width: $width;
+    height: $height;
+    border: 2px solid $color;
+    border-radius: 5px;
+    background-color: $color;
+}
+@mixin time-line($width, $height, $color){
+    width: $width;
+    height: $height;
+    background-color: $color;
+}
+@mixin number-circle($size, $color){
+    @if $size == $mediumCircle{
+        @include circle($mediumCircle);
+    }
+    @if $size == $smallCircle{
+        @include circle($smallCircle);
+    }
+    padding-top: 6px;
+    background-color: $color;
+    color: white;
+    text-align: center;
+}
+
+/***************************** 
+*           SHAPES           *
+*****************************/
+@mixin circle($diameter){
+    width: $diameter;
+    height: $diameter;
+    border-radius: $diameter/2;
+}
+@mixin dimension($width, $height){
+    width: $width;
+    height: $height;
+}
+
+
+
+/***************************** 
+*           MARGIN           *
+*****************************/
+@mixin margin($top, $right, $bottom, $left){
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+
+/***************************** 
+*          PADDING           *
+*****************************/
+@mixin padding($top, $right, $bottom, $left){
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
