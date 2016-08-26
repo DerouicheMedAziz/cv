@@ -293,7 +293,8 @@ table {
 }
 
 .secondary section:nth-child(4) {
-  padding-bottom: 15px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
 }
 
 .item-hobbie {
