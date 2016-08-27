@@ -19,12 +19,7 @@ var skillsHeight;
 var skillsTopPosition;
 var skillsBottomPosition;
 
-function laungageItem(i, l){  
-    for(c = 1; c <= l; c++ ){  
-        $("table tr:nth-child("+i+") td:nth-child("+ (c+1) +") .circle-level").delay(laungageDelay).animate({backgroundColor: '#27ae60'}, 500);  
-        laungageDelay = laungageDelay + 150;  
-    }  
-}
+
 function header(){
     $(".img").delay(300).animate({marginLeft: '0px', opacity: '1.0'}, "slow");
     $("header div:nth-child(2) h1").delay(600).animate({paddingLeft: '200px', opacity: '1.0'}, "slow");
@@ -46,7 +41,6 @@ function education(){
     $(".principal section:nth-child(2) .col-md-12 div.hidden-xs > div.col-sm-10 div:nth-child(1) div.talkbubble").animate({marginLeft: '45px', opacity: '1.0'}, "slow");
     // talkbuuble 2006
     $(".principal section:nth-child(2) .col-md-12 div.hidden-xs > div.col-sm-10 div:nth-child(2) div.talkbubble").delay(250).animate({marginLeft: '45px', opacity: '1.0'}, "slow");
-    
 };
 function educationXS(){
     $(".time-line").animate({height: '100%'}, 800);
@@ -67,16 +61,14 @@ function skills(){
     }
 };
 function laungages(){
-    laungageItem(1, 2);
-    laungageItem(2, 3);
-    laungageItem(3, 1);
-    laungageItem(4, 4);
-    
-    /*---------------- * Add your laungage item here * ----------------+
-    |                                                                  |
-    |   laungageItem(INDEX, LEVEL);                                    |
-    |                                                                  |
-    +-----------------------------------------------------------------*/
+    lenght = parseInt($(".secondary section:nth-child(3)").attr("data-length"));
+    for(i=0; i < lenght; i++){
+        level = parseInt($("table tr:nth-child("+(i+1)+")").attr("data-level"));
+        for(j=0;j<level;j++){
+            $("table tr:nth-child("+(i+1)+") td:nth-child("+ (j+2) +") .circle-level").delay(laungageDelay).animate({backgroundColor: '#27ae60'}, 500);  
+            laungageDelay = laungageDelay + 150;  
+        }
+    }
 };
 
 
