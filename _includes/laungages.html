@@ -1,10 +1,10 @@
-<section class="row">
+<section class="row" data-length="{{ site.data.laungages.items | size }}">
     <div class="col-md-12">
         <h3 class="section-title"><strong>// LAUNGAGES</strong></h3>
         <table>
             
             {% for item in site.data.laungages.items %}
-            <tr>
+            <tr data-level="{{ item.level }}">
                 <td class="col-title"><h4>{{ item.laungage }}</h4></td>
                 <td class="col-circle"><div class="circle-level"></div></td>
                 <td class="col-circle"><div class="circle-level"></div></td>

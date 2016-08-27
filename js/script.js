@@ -1,5 +1,8 @@
 var x, y;
 
+var educationCircleDelay= 0;
+var educationItemDelay = 800;
+var educationContentDelay = 1200;
 var skillDelay = 0;
 var laungageDelay = 0;
             
@@ -19,16 +22,7 @@ var skillsHeight;
 var skillsTopPosition;
 var skillsBottomPosition;
 
-function skillItem(i, l){
-    skillDelay = skillDelay + 400;
-    $(".progress:nth-of-type(" + i + ") .progress-bar").animate({width: l}, skillDelay);
-}
-function laungageItem(i, l){  
-    for(c = 1; c <= l; c++ ){  
-        $("table tr:nth-child("+i+") td:nth-child("+ (c+1) +") .circle-level").delay(laungageDelay).animate({backgroundColor: '#27ae60'}, 500);  
-        laungageDelay = laungageDelay + 150;  
-    }  
-}
+
 function header(){
     $(".img").delay(300).animate({marginLeft: '0px', opacity: '1.0'}, "slow");
     $("header div:nth-child(2) h1").delay(600).animate({paddingLeft: '200px', opacity: '1.0'}, "slow");
@@ -40,50 +34,49 @@ function headerXS(){
     $("header div:last-child h4").delay(900).animate({opacity: '1.0'}, "slow");
 };
 function education(){
-    // time-line
+    lenght = parseInt($(".principal section:nth-child(2)").attr("data-length"));
     $(".time-line").animate({height: '100%'}, 800);
-    // number-circle 2004
-    $(".principal section:nth-child(2) .col-md-12 div.hidden-xs div.col-sm-10 div:nth-child(1) div.number-circle").fadeIn("slow");
-    // number-circle 2006
-    $(".principal section:nth-child(2) .col-md-12 div.hidden-xs > div.col-sm-10 div:nth-child(2) div.number-circle").delay(500).fadeIn("slow");
-    // talkbuuble 2004
-    $(".principal section:nth-child(2) .col-md-12 div.hidden-xs > div.col-sm-10 div:nth-child(1) div.talkbubble").animate({marginLeft: '45px', opacity: '1.0'}, "slow");
-    // talkbuuble 2006
-    $(".principal section:nth-child(2) .col-md-12 div.hidden-xs > div.col-sm-10 div:nth-child(2) div.talkbubble").delay(250).animate({marginLeft: '45px', opacity: '1.0'}, "slow");
-    
+    for(i=0;i<lenght;i++){
+        $(".principal section:nth-child(2) .col-md-12 div.hidden-xs > div.col-sm-10 div:nth-child("+ (i+1) +") div.number-circle").delay(educationCircleDelay).fadeIn("slow");
+        educationCircleDelay = educationCircleDelay + 400;
+    }
+    for(i=0;i<lenght;i++){
+        $(".principal section:nth-child(2) .col-md-12 div.hidden-xs > div.col-sm-10 div:nth-child("+ (i+1) +") div.talkbubble").delay(educationItemDelay).animate({marginLeft: '45px', opacity: '1.0'}, "slow");
+        educationItemDelay = educationItemDelay + 400;
+    }
 };
 function educationXS(){
+    lenght = parseInt($(".principal section:nth-child(2)").attr("data-length"));
     $(".time-line").animate({height: '100%'}, 800);
-    $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(1) .number-circle").fadeIn("slow");
-    $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2) .number-circle").delay(400).fadeIn("slow");
-    $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(1)").delay(800).animate({backgroundPosition: "0%"}, 400);
-    $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2)").delay(1200).animate({backgroundPosition: "0%"}, 400);
-    $('.principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(1) .education-content').delay(1200).animate({opacity: '1.0'}, "slow");
-    $('.principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2) .education-content').delay(1600).animate({opacity: '1.0'}, "slow");
+    for(i=0;i<lenght;i++){
+        $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child("+ (i+1) +") .number-circle").delay(educationCircleDelay).fadeIn("slow");
+        educationCircleDelay = educationCircleDelay + 400;
+    }
+    for(i=0;i<lenght;i++){
+        $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child("+ (i+1) +")").delay(educationItemDelay).animate({backgroundPosition: "0%"}, 400);
+        educationItemDelay = educationItemDelay + 400;
+        $(".principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child("+ (i+1) +") .education-content").delay(educationContentDelay).animate({opacity: '1.0'}, "slow");
+        educationContentDelay = educationContentDelay + 400;
+    }
 };
 function skills(){
-    skillItem("1", "70%");
-    skillItem("2", "40%");
-    skillItem("3", "20%");
-    
-    /*------------------ * Add your skill item here * -----------------+
-    |                                                                  |
-    |   skillItem("INDEX", "LEVEL");                                   |
-    |                                                                  |
-    +-----------------------------------------------------------------*/
-    
+    lenght = parseInt($(".secondary section:nth-child(2)").attr("data-length"));
+    for(c = 0; c < lenght; c++){
+        i = c + 1;
+        level = $(".progress:nth-of-type(" + i + ") .progress-bar").attr("data-level");
+        $(".progress:nth-of-type(" + i + ") .progress-bar").animate({width: level}, skillDelay);
+        skillDelay = skillDelay + 400;
+    }
 };
 function laungages(){
-    laungageItem(1, 2);
-    laungageItem(2, 3);
-    laungageItem(3, 1);
-    laungageItem(4, 4);
-    
-    /*---------------- * Add your laungage item here * ----------------+
-    |                                                                  |
-    |   laungageItem(INDEX, LEVEL);                                    |
-    |                                                                  |
-    +-----------------------------------------------------------------*/
+    lenght = parseInt($(".secondary section:nth-child(3)").attr("data-length"));
+    for(i=0; i < lenght; i++){
+        level = parseInt($("table tr:nth-child("+(i+1)+")").attr("data-level"));
+        for(j=0;j<level;j++){
+            $("table tr:nth-child("+(i+1)+") td:nth-child("+ (j+2) +") .circle-level").delay(laungageDelay).animate({backgroundColor: '#27ae60'}, 500);  
+            laungageDelay = laungageDelay + 150;  
+        }
+    }
 };
 
 
