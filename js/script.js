@@ -19,10 +19,6 @@ var skillsHeight;
 var skillsTopPosition;
 var skillsBottomPosition;
 
-function skillItem(i, l){
-    skillDelay = skillDelay + 400;
-    $(".progress:nth-of-type(" + i + ") .progress-bar").animate({width: l}, skillDelay);
-}
 function laungageItem(i, l){  
     for(c = 1; c <= l; c++ ){  
         $("table tr:nth-child("+i+") td:nth-child("+ (c+1) +") .circle-level").delay(laungageDelay).animate({backgroundColor: '#27ae60'}, 500);  
@@ -62,16 +58,13 @@ function educationXS(){
     $('.principal section:nth-child(2) .col-md-12 div:nth-child(2) div:nth-child(2) .education-content').delay(1600).animate({opacity: '1.0'}, "slow");
 };
 function skills(){
-    skillItem("1", "70%");
-    skillItem("2", "40%");
-    skillItem("3", "20%");
-    
-    /*------------------ * Add your skill item here * -----------------+
-    |                                                                  |
-    |   skillItem("INDEX", "LEVEL");                                   |
-    |                                                                  |
-    +-----------------------------------------------------------------*/
-    
+    lenght = parseInt($(".secondary section:nth-child(2)").attr("data-length"));
+    for(c = 0; c < lenght; c++){
+        i = c + 1;
+        level = $(".progress:nth-of-type(" + i + ") .progress-bar").attr("data-level");
+        $(".progress:nth-of-type(" + i + ") .progress-bar").animate({width: level}, skillDelay);
+        skillDelay = skillDelay + 400;
+    }
 };
 function laungages(){
     laungageItem(1, 2);
