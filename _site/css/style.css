@@ -170,7 +170,7 @@ section:nth-child(2) .education-content {
   }
 }
 
-.experience-title {
+.principal section:nth-child(3) .experience-title {
   display: inline-block;
   margin-top: 15px;
 }
