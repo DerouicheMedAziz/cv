@@ -257,27 +257,24 @@ section:nth-child(2) .education-content {
   width: 15%;
 }
 
-table {
+.secondary section:nth-child(3) table {
   width: 100%;
 }
-
-.col-title {
+.secondary section:nth-child(3) .col-title {
   width: 51%;
 }
-
-.col-circle {
+.secondary section:nth-child(3) .col-circle {
   width: 9%;
 }
-
-.circle-level {
+.secondary section:nth-child(3) .col-circle .circle-level {
   position: relative;
   display: inline-block;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
+  border-radius: 50%;
   border: 2px solid #27ae60;
-  background-color: none;
   color: white;
+  background-color: none;
 }
 
 .secondary section:nth-child(4) {
