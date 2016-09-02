@@ -90,7 +90,7 @@ header div:last-child h1 {
 section:nth-child(2) .table {
   padding-left: 10px;
 }
-section:nth-child(2) .col-md-12 div:nth-child(2) .table-cell {
+section:nth-child(2) .visible-xs .table-cell:nth-child(2) {
   padding-top: 25px;
 }
 section:nth-child(2) .time-line {
