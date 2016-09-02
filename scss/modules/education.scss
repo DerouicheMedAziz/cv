@@ -2,11 +2,9 @@ section:nth-child(2){
     .table{
         padding-left: 10px;
     }
-    .col-md-12{
-        div:nth-child(2){
-            .table-cell{
-                padding-top: 25px;
-            }
+    .visible-xs{
+        .table-cell:nth-child(2){
+            padding-top: 25px;
         }
     }
     .time-line{
