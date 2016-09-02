@@ -1,56 +1,59 @@
-.progress{
-    margin-bottom: 15px;
-    height: auto;
-}
-.progress-bar{
-    width: 0%; 
-    text-align: left; 
-    padding-left: 2%; 
-    background-color: $blue;
-}
-.beginner-proficient{
-    display: inline-block;
-    width: 40%;
-    height: 10px;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 1px solid black;
-    opacity: 0.3;
-}
-.proficient-expert{
-    display: inline-block;
-    width: 30%;
-    height: 10px;
-    margin-left: -4px;
-    border-bottom: 2px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    opacity: 0.3;
-}
-.expert-master{
-    display: inline-block;
-    width: 30%;
-    height: 10px;
-    margin-left: -4px;
-    border-bottom: 2px solid black;
-    border-left: 1px solid black;
-    border-right: 2px solid black;
-    opacity: 0.3;
-}
-.skills-level{
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-left: -4px;
-    opacity: 0.3;
-}
-.skills-level:nth-of-type(1){
-    margin-left: 0px;
-    width: 25%;
-    
-}
-.skills-level:nth-of-type(2), .skills-level:nth-of-type(3){
-    width: 30%;
-}
-.skills-level:nth-of-type(4){
-    width: 15%;
+.secondary{
+    section:nth-child(2){
+        .progress{
+            margin-bottom: 15px;
+            height: auto;
+            .progress-bar{
+                width: 0%; 
+                text-align: left; 
+                padding-left: 2%; 
+                background-color: $blue;
+            }
+        }
+        .beginner-proficient{
+            display         : inline-block;
+            width           : 40%;
+            height          : 10px;
+            border-bottom   : 2px solid black;
+            border-left     : 2px solid black;
+            border-right    : 1px solid black;
+            opacity         : 0.3;
+        }
+        .proficient-expert{
+            display         : inline-block;
+            width           : 30%;
+            height          : 10px;
+            margin-left     : -4px;
+            border-bottom   : 2px solid black;
+            border-left     : 1px solid black;
+            border-right    : 1px solid black;
+            opacity         : 0.3;
+        }
+        .expert-master{
+            display         : inline-block;
+            width           : 30%;
+            height          : 10px;
+            margin-left     : -4px;
+            border-bottom   : 2px solid black;
+            border-left     : 1px solid black;
+            border-right    : 2px solid black;
+            opacity         : 0.3;
+        }
+        .skills-level{
+            display         : inline-block;
+            margin-bottom   : 10px;
+            margin-left     : -4px;
+            opacity         : 0.3;
+            &:nth-of-type(1){
+                margin-left : 0px;
+                width       : 25%;
+            }
+            &:nth-of-type(2), &:nth-of-type(3){
+                width: 30%;
+            }
+            &:nth-of-type(4){
+                width: 15%;
+            }
+        }
+    }
 }
