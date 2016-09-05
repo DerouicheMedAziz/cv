@@ -17,6 +17,7 @@ section:nth-child(2){
         position    : absolute;
         margin-top  : 20px;
         display     : none;
+        
         @media screen and (max-width: $extra_small_screen){
             &{
                 @include number-circle($smallCircle, $yellow);
@@ -24,6 +25,7 @@ section:nth-child(2){
                 left        : -25px;
             }
         }
+        
         @media screen and (min-width: $small_screnn){
             &{
                 @include number-circle($mediumCircle, $yellow);
@@ -57,7 +59,8 @@ section:nth-child(2){
     .education-content{
         display : inline-block;
         color   : white;
-        @media screen and (max-width: $extraSmallScreen){
+        
+        @media screen and (max-width: $extra_small_screen){
             &{
                 opacity: 0.0;
             }
