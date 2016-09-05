@@ -1,12 +1,10 @@
 /*
 Error: Undefined variable: "$extraSmallScreen".
-        on line 20 of scss/modules/education.scss
+        on line 60 of scss/modules/education.scss
         from line 10 of scss/style.scss
 
-15: @import "modules/hobbie.scss";
-
 Backtrace:
-scss/modules/education.scss:20
+scss/modules/education.scss:60
 scss/style.scss:10
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
@@ -86,4 +84,4 @@ scss/style.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$extraSmallScreen\".\A         on line 20 of scss/modules/education.scss\A         from line 10 of scss/style.scss\A \A 15: @import \"modules/hobbie.scss\";"; }
+  content: "Error: Undefined variable: \"$extraSmallScreen\".\A         on line 60 of scss/modules/education.scss\A         from line 10 of scss/style.scss"; }
