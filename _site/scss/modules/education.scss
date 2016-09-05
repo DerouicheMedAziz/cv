@@ -17,14 +17,14 @@ section:nth-child(2){
         position    : absolute;
         margin-top  : 20px;
         display     : none;
-        @media screen and (max-width: $smallScreen){
+        @media screen and (max-width: $extraSmallScreen){
             &{
                 @include number-circle($smallCircle, $yellow);
                 margin-top  : 0px;
                 left        : -25px;
             }
         }
-        @media screen and (min-width: $mediumScrenn){
+        @media screen and (min-width: $smallScrenn){
             &{
                 @include number-circle($mediumCircle, $yellow);
                 left: -28px;
@@ -57,7 +57,7 @@ section:nth-child(2){
     .education-content{
         display : inline-block;
         color   : white;
-        @media screen and (max-width: $smallScreen){
+        @media screen and (max-width: $extraSmallScreen){
             &{
                 opacity: 0.0;
             }
